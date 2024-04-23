@@ -1,10 +1,8 @@
 /* Reset params */
-
-:root{
+*{
     margin: 0;
     padding: 0;
 }
-
 
 /* Variables de estilo*/
 :root {
@@ -27,20 +25,11 @@
     --news-title-color:             #292828;
     --p-color:                      #717275;
     --border-color:                 #eaeaea;
-
-/* 
-
-    --menu-font-size:               18px;
-    --category-font-size:           14px;
-
-    --font-weight-light:            300;
-    --font-weight-normal:           400;
-    --font-weight-semibold:         600;
-    --font-weight-bold:             700; */
 }
 
+
+/* Estilos en comun a todas las páginas */
 body {
     background: var(--white-color);
     font-family: var(--body-font-family);    
-    position: relative;
 }
