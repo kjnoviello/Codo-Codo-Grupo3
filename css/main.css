@@ -31,5 +31,5 @@
 /* Estilos en comun a todas las páginas */
 body {
     background: var(--white-color);
-    font-family: var(--body-font-family);    
+    font-family: var(--font-family);    
 }

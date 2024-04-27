@@ -1,0 +1,49 @@
+/* Home - Main section */
+
+.main__section{
+    margin-top: 200px;
+    position: relative;
+}
+
+.section__video{
+    object-fit: cover;
+    width: 100%;
+}
+
+.section__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    color: var(--white-color);
+    z-index: 999;
+    div{
+        width: 50%;
+        margin: auto;
+        h1{
+            font-size: var(--h1-size);
+        }
+        h4{
+            font-size: var(--h4-size);
+        }
+        p{
+            font-weight: 100;
+        }
+    }
+}
+
+.carrousel{
+    width: 35vw;
+    height: 100%;
+}
+.overlaid{
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent 100%);
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
