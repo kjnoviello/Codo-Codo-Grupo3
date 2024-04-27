@@ -25,8 +25,20 @@
         h1{
             font-size: var(--h1-size);
         }
-        h4{
-            font-size: var(--h4-size);
+        div{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            h4{
+                font-size: var(--h4-size);
+                padding-right: 10px;
+            }
+            svg{
+                padding-inline:px;
+                color: #f3d634;
+                width: 20px ;
+                height: 20px;
+            }
         }
         p{
             font-weight: 100;
