@@ -192,10 +192,14 @@ News & Events */
     gap: 20px;
     div{
         position: relative;
-        padding-bottom: 20px;
+        overflow: hidden;
         img{
             width: 100%;
             height: 100%;
+        }
+        img:hover{
+            transform: scale(1.3);
+            transition: all 0.3s ease 0s;
         }
         h5{
             z-index: 99;
@@ -210,10 +214,16 @@ News & Events */
 
 .section_news{
     div{
-        padding-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        
         img{
             width: 100%;
             height: 100%;
+        }
+        img:hover{
+            transform: scale(1.3);
+            transition: all 0.3s ease 0s;
         }
     }
 }
