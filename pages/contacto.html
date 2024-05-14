@@ -1,15 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/contacto.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/contacto.css" />
+  <title>Document</title>
 </head>
+
 <body>
-    
-    <!-- Script -->
-    <script src="../js/main.js"></script>
+  <main>
+    <header class="site-header site-contact-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-12 mx-auto">
+            <h1 class="text-white">Di Hola</h1>
+            <strong class="text-white">Estamos felices de ponernos en contacto contigo</strong>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </header>
+    <section class="contact section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-4">Dejanos un Mensaje</h2>
+          </div>
+          <div class="col-lg-6 col-12">
+            <form action="#" class="custom-form contact-form row large-form">
+              <div class="col-lg-6 col-12">
+                <label for="contact-name" class="form-label">Nombre Completo</label>
+                <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Tu nombre" />
+              </div>
+              <div class="col-lg-6 col-12">
+                <label for="contact-phone" class="form-label">Número de teléfono</label>
+                <input type="text" name="contact-phone" id="contact-phone" class="form-control"
+                  placeholder="Tu teléfono" />
+                <div class="col-lg-5 col-12 ms-auto">
+
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="contact-email">Email</label>
+                <input type="email" name="contact-email" id="contact-email" placeholder="Tu email" class="form-control"
+                  pattern="[^@]*@[^@]*" />
+              </div>
+              <div class="col-12">
+                <label for="contact-message" class="form-label">Mensaje</label>
+                <textarea name="contact-message" id="contact-message" rows="5" class="form-control"
+                  placeholder="Tu mensaje"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="form-control">
+                  Enviar Mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4 col-12 mx-auto mt-lg-5 mt-4">
+            <h5>Días de Semanas</h5>
+            <div class="d-flex mb-lg-3">
+              <p>Lunes a Viernes</p>
+              <p class="ms-5">10:00 AM - 08:00 PM</p>
+            </div>
+            <h5>Fin de Semanas</h5>
+            <div class="d-flex mb-lg-3">
+              <p>Sábado y Domingo</p>
+              <p class="ms-5">11:00 AM - 11:00 PM</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <h4 class="mt-5 mb-4">Av. 9 de Julio 2444 - Buenos Aires</h4>
+            <div id="map" class="google-map pt-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Script -->
+  <script src="../js/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </body>
+
 </html>
