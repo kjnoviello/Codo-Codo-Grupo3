@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var position = marker.getLatLng();
     map.panTo(new L.LatLng(position.lat, position.lng));
   });
+});
 
 const bodyEl = document.body;
 const hamburgerEl = document.querySelector('.nav__button-menu');
