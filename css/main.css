@@ -1,11 +1,12 @@
 /* Reset params */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* Variables de estilo*/
 :root {
+
     --font-family:             'Montserrat', sans-serif;
 
     --h1-size:                 76px;
@@ -28,6 +29,7 @@
     --news-title-color:             #292828;
     --p-color:                      #5b5b5b;
     --border-color:                 #eaeaea;
+
 }
 
 
