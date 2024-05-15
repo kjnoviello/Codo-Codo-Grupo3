@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <link rel="stylesheet" href="../css/normalize.css" />
   <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/contacto.css" />
-  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" 
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/footer.css">
+  <title>Flippo</title>
 </head>
 
 <body>
+  <header>
+    <nav class="nav">
+        <a href="../index.html" class="nav__link">
+            <img class="nav__link-favicon" src="../assets/favicon.png" alt="">
+            <img src="../assets/logo.png" alt="logo del negocio">
+        </a>
+        <div class="nav__menu" id="nav__menu">
+            <ul class="ul ">
+                <li class="ul__item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="ul__item">
+                    <a href="">Nosotros</a>
+                </li>
+                <li class="ul__item">
+                    <a href="">Menu</a>
+                </li>
+                <li class="ul__item">
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                <button class="nav__button nav__button_hide">Reservation</button>
+            </ul>
+        </div>
+        <button class="nav__button-menu"><i class="ri-menu-line"></i></button>
+        <button class="nav__button">Reservation</button>
+    </nav>
+  </header>
   <main>
     <header class="site-header site-contact-header">
       <div class="container">
