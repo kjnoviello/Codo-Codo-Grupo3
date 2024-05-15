@@ -27,6 +27,7 @@ includes Video */
     width: 100%;
     div{
         padding: 16px;
+        padding-top: 80px;
         h1{
             font-size: var(--h1-size-res);
         }
