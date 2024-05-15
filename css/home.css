@@ -5,7 +5,6 @@ includes Video */
 
 .main__section:nth-child(1){
     position: relative;
-    padding-top: 50px;
     padding-bottom: 150px;
     overflow: hidden;
 }
@@ -19,7 +18,7 @@ includes Video */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -45%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +71,7 @@ includes Video */
     right: 0;
     bottom: 0;
     left: 0;
-    height: 600px;
+    height: 550px;
 }
 
 /** Second section 
@@ -280,6 +279,7 @@ News & Events */
         padding-inline: 100px;
         gap:100px;
         width: 100%;
+        transform: translate(-50%, -65%);
         div:nth-child(1){
             width: 28%;
             align-items: center;
