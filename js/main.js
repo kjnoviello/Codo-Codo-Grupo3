@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   var map = L.map("map").setView([-34.601242, -58.392862], 13); // Coordenadas para la Avenida 9 de Julio 2444
 
@@ -17,4 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var position = marker.getLatLng();
     map.panTo(new L.LatLng(position.lat, position.lng));
   });
+
+const bodyEl = document.body;
+const hamburgerEl = document.querySelector('.nav__button-menu');
+const menuEl = document.getElementById('nav__menu');
+
+hamburgerEl.addEventListener('click', () => {
+    menuEl.classList.toggle('active');
+
 });

@@ -4,15 +4,286 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" 
+    rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/footer.css">
-    <title>Document</title>
+    <title>Flippo</title>
 </head>
 <body>
-    <h1><a href="./pages/nosotros.html">nosotros</a></h1>
+    <header>
+        <nav class="nav">
+            <a href="../index.html" class="nav__link">
+                <img class="nav__link-favicon" src="./assets/favicon.png" alt="">
+                <img src="../assets/logo.png" alt="logo del negocio">
+            </a>
+            <div class="nav__menu" id="nav__menu">
+                <ul class="ul ">
+                    <li class="ul__item">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="ul__item">
+                        <a href="">Nosotros</a>
+                    </li>
+                    <li class="ul__item">
+                        <a href="">Menu</a>
+                    </li>
+                    <li class="ul__item">
+                        <a href="">Contacto</a>
+                    </li>
+                    <button class="nav__button nav__button_hide">Reservation</button>
+                </ul>
+            </div>
+            <button class="nav__button-menu"><i class="ri-menu-line"></i></button>
+            <button class="nav__button">Reservation</button>
+        </nav>
+    </header>
+    <main>
+        <section class="main__section">
+            <video width="100%" height="550px" class="section__video" autoplay muted poster loop >
+                <source src="./assets/production_ID_3769033.mp4" type="video/mp4">
+                Su navegador no soporta este formato de video.
+            </video>
+            <article class="section__text">
+                <div>
+                    <h1>Deliciosos filetes</h1>
+                    <br>
+                    <div>
+                        <h4>4.4/5</h4>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div>
+                    <p>De <strong>más de 1,206 </strong>reseñas de clientes</p>
+                </div>
+                <div class="section__carrousel">
+                    <img class="carrousel_img" src="./assets/images/carrousel/gif.gif" alt="">
+                </div>
+            </article>
+            <article class="section__overlaid">
+            </article>
+        </section>
+
+        <section class="main__section">
+            <h2 class="section__h2">Menú Especiales</h2>
+            <article class="section__container">
+
+                <div class="section__card">
+                    <div class="card_img">
+                        <img src="./assets/images/breakfast/breakfast01.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Desayuno</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Mañana fresca</h4>
+                            <p><small>$</small>12.50</p>
+                        </div>
+                        <div>
+                            <h6>4.3/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>102 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card_img">
+                        <img src="./assets/images/lunch/lunch02.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Almuerzo</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Sopa Tooplate</h4>
+                            <p><small>$</small>24.50</p>
+                        </div>
+                        <div>
+                            <h6>3.5/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>50 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card_img">
+                        <img src="./assets/images/dinner/dinner03.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Cena</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Filete Premium</h4>
+                            <p><small>$</small>45</p>
+                        </div>
+                        <div>
+                            <h6>3.5/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>86 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card_img">
+                        <img src="./assets/images/dinner/dinner02.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Cena</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Cena de mar</h4>
+                            <p><small>$</small>86</p>
+                        </div>
+                        <div>
+                            <h6>4.2/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>44 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card_img">
+                        <img src="./assets/images/breakfast/breakfast02.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Desayuno</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Hamburguesa</h4>
+                            <p><small>$</small>20.50</p>
+                        </div>
+                        <div>
+                            <h6>4.3/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>98 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card_img">
+                        <img src="./assets/images/lunch/lunch01.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Almuerzo</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Sopa fría</h4>
+                            <p><small>$</small>34.20</p>
+                        </div>
+                        <div>
+                            <h6>4.5/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>64 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="main_img">
+        </section>
+
+        <section class="main__section">
+            <h2 class="section__h2">Noticias y eventos</h2>
+            <article class="section__container">
+                <div class="section_events">
+                    <div>
+                        <img src="./assets/images/news/news06.jpg" alt="">
+                        <span class="tag event__tag">Presentando</span>
+                        <h5>Consejos para un estilo de vida saludable y una vida feliz</h5>
+                    </div>
+                    <div>
+                        <img src="./assets/images/news/news07.jpg" alt="">
+                        <span class="tag event__tag">Presentando</span>
+                        <h5>Como hacer una comida saludable</h5>
+                    </div>
+                </div>
+                <div class="section_news">
+                    <div>
+                        <img src="./assets/images/news/news04.jpg" alt="">
+                        <div class="card__info">
+                            <div>
+                                <h4>¿El coco es bueno para tí?</h4>
+                            </div>
+                            <div>
+                                <span class="event__tag event_tag--promociones">Promociones</span>
+                                <p>8 de abril del 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/news/news01.jpg" alt="">
+                        <div class="card__info">
+                            <div>
+                                <h4>Fideos de filet de salmón</h4>
+                            </div>
+                            <div>
+                                <span class="event__tag event_tag--noticias">Noticias</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/news/news05.jpg" alt="">
+                        <div class="card__info">
+                            <div>
+                                <h4>Hacer una ensalada saludable</h4>
+                            </div>
+                            <div>
+                                <span class="event__tag event_tag--promociones">Reunión</span>
+                                <p>30 de abril del 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
     
     <!-- Script -->
-    <script src="./js/main.js"></script>
+
+    <!-- <script src="./js/main.js"></script> -->
+
+    <script src="../js/main.js"></script>
 
 </body>
 </html>
