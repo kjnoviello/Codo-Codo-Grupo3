@@ -13,7 +13,7 @@ nav{
 }
 .nav__link{
     filter: drop-shadow( 15px 12px 8px black);
-    img{
+    & img{
         width: 176px;
         height: 47px;
     }
@@ -21,24 +21,24 @@ nav{
 
 .nav__menu{
     padding-inline: 10%;
-    ul{
+    & ul{
         display: flex;
         flex-direction: row;
-        li{
+        & li{
             list-style: none;
             margin: 15px 24px;
             cursor: pointer;
-            a{
+            & a{
                 color: var(--p-color);
                 text-decoration: none;
                 font-size: var(--p-size);
                 font-weight: bolder;
                 text-shadow: 0px 0px 10px rgb(137, 135, 135);
             }
-            a:hover{
+            & a:hover{
                 color: var(--primary-color);
             }
-            a:active, a:focus{
+            & a:active, a:focus{
                 color: var(--primary-color);
             }
         };
@@ -73,7 +73,7 @@ nav{
     border-radius: 5px;
     cursor: pointer;
     display: none;
-    i{
+    & i{
         font-size: 30px;
     }
     /* &:hover{
@@ -88,8 +88,8 @@ nav{
 @media (max-width: 992px){
     .nav__menu{
         padding-inline: 0px;
-        ul{
-            li{
+        & ul{
+            & li{
                 margin: 15px 12px;
             }
         }
@@ -112,9 +112,9 @@ nav{
         top: 90px;
         width: 100%;
         z-index: 99999;
-        ul{
+        & ul{
             flex-direction: column;
-            li{
+            & li{
                 text-align: center;
             }
         }
