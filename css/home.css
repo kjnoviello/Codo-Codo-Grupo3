@@ -25,30 +25,25 @@ includes Video */
     color: var(--white-color);
     z-index: 999;
     width: 100%;
-    div{
+    & div{
         padding: 16px;
         padding-top: 80px;
-        h1{
+        & h1{
             font-size: var(--h1-size-res);
         }
-        p{
-            strong{
+        & p{
+            & strong{
                 font-weight: 900;
             }
         }
-        div{
+        & div{
             margin: 0;
             display: flex;
             align-items: center;
             padding: 0;
-            h4{
+            & h4{
                 font-size: var(--h4-size);
                 padding-right: 10px;
-            }
-            svg{
-                color: #f3d634;
-                width: 20px ;
-                height: 20px;
             }
         }
     }
@@ -100,7 +95,7 @@ inlcudes cards */
 
 .card_img{
     position: relative;
-    img{
+    & img{
         width: 100%;
         height: 100%;
     }
@@ -125,14 +120,14 @@ inlcudes cards */
     padding: 20px 20px 30px 20px;
     font-size: 18px;
     background-color: var(--section-bg-color);
-    div:nth-child(1){
+    & div:nth-child(1){
         align-items: center;
         display: flex;
         gap: 20px;
-        h4{
+        & h4{
             font-size: var(--h4-size);
         }
-        p{
+        & p{
             background: var(--white-color);
             border-radius: 100px;
             color: var(--secondary-color);
@@ -145,18 +140,18 @@ inlcudes cards */
             box-shadow: 0px 0px 50px rgba(0, 0, 0, .175);
         }
     }
-    div:nth-child(2){
+    & div:nth-child(2){
         display: flex;
         gap: 20px;
         align-items: center;
         margin-block: 5px;
-        h6{
+        & h6{
             font-size: var(--h6-size-res);
         }
-        div{
+        & div{
             gap: 0;
         }
-        p{
+        & p{
             color: var(--p-color);
         }
     }
@@ -195,18 +190,18 @@ News & Events */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    div{
+    & div{
         position: relative;
         overflow: hidden;
-        img{
+        & img{
             width: 100%;
             height: 100%;
         }
-        img:hover{
+        & img:hover{
             transform: scale(1.3);
             transition: all 0.3s ease 0s;
         }
-        h5{
+        & h5{
             z-index: 99;
             position: absolute;
             color: var(--white-color);
@@ -218,15 +213,15 @@ News & Events */
 }
 
 .section_news{
-    div{
+    & div{
         overflow: hidden;
         position: relative;
         
-        img{
+        & img{
             width: 100%;
             height: 100%;
         }
-        img:hover{
+        & img:hover{
             transform: scale(1.3);
             transition: all 0.3s ease 0s;
         }
@@ -285,25 +280,25 @@ News & Events */
         gap:100px;
         width: 100%;
         transform: translate(-50%, -65%);
-        div:nth-child(1){
+        & div:nth-child(1){
             width: 28%;
             align-items: center;
             align-self: center;
             padding: 16px;
-            h1{
+            & h1{
                 font-size: var(--h1-size);
             }
         }
     }
     .card_img{
-        img{
+        & img{
             width: 340px;
             height: 100%;
         }
     }
     .card__info{
-        div:nth-child(1){
-            h4{
+        & div:nth-child(1){
+            & h4{
                 font-size: var(--h4-size);
             }
         }
@@ -322,8 +317,8 @@ News & Events */
         flex-direction: row;
         display: flex;
         gap: 20px;
-        div{
-            img{
+        & div{
+            & img{
                 width: 100%;
                 height: auto;
             }
