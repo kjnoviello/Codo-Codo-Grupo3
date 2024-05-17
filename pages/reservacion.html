@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="reservation">
+        <div class="reservation__header">
+            <h2 class="reservation__title">Reservar una mesa</h2>
+            <button class="reservation__close-button">X</button>
+        </div>
+        <section class="reservation__content">
+            <div class="reservation__form-container">
+                <form class="reservation__form" action="">
+                    <div class="reservation__form-row">
+                        <div class="reservation__form-group">
+                            <div class="reservation__form-item">
+                                <label class="reservation__label" for="nombres"></label>
+                                <input class="reservation__input" type="text" name="nombres" id="nombres" placeholder="Nombre completo">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="reservation__label" for="telefono"></label>
+                                <input class="reservation__input" type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="reservation__label" for="fecha"></label>
+                                <input class="reservation__input" type="date" name="fecha" id="fecha" placeholder="Fecha">
+                            </div>
+                        </div>
+                        <div class="reservation__form-group">
+                            <div class="reservation__form-item">
+                                <label class="reservation__label" for="email"></label>
+                                <input class="reservation__input" type="email" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="reservation__label" for="comensales"></label>
+                                <input class="reservation__input" type="number" name="comensales" id="comensales" placeholder="Comensales">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="reservation__label" for="horario"></label>
+                                <input class="reservation__input" type="time" name="horario" id="horario" placeholder="Horario">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reservation__form-group">
+                        <label class="reservation__label" for="observaciones"></label>
+                        <textarea class="reservation__textarea" name="observaciones" id="observaciones" placeholder="Solicitud especial"></textarea>
+                    </div>
+                    <div class="reservation__form-actions">
+                        <button class="reservation__submit-button" type="submit">Reservar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="reservation__image-container">
+                <img class="reservation__image" src="../assets/images/modal/modal1.jpg" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

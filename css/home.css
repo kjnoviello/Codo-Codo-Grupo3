@@ -252,9 +252,9 @@ News & Events */
 }
 
 
-/** Responsive Media */
+/* Responsive Media */
 
-/** Media 576px*/
+/* Media 576px*/
 @media (min-width: 576px) {
     .carrousel_img{
         width: 544px;
@@ -268,7 +268,7 @@ News & Events */
     }
 }
 
-/** Media 992px */
+/* Media 992px */
 @media (min-width: 992px) {
     .carrousel_img{
         width: 100%;

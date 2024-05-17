@@ -76,15 +76,10 @@ nav{
     & i{
         font-size: 30px;
     }
-    /* &:hover{
-        background-color: brown;
-        transition: 0.5s ease all;
-    } */
 }
 
 
 /* MEDIA */
-
 @media (max-width: 992px){
     .nav__menu{
         padding-inline: 0px;
@@ -124,12 +119,6 @@ nav{
         display: block;
         background-color: var(--secondary-color);
         box-shadow: 10px 10px 50px;
-        /* background: linear-gradient(to top, #f3af24, transparent 100%); */
-
-        /* AGREGAR BLUR */
-        
-
-
     }
     .nav{
         justify-content: space-around;
