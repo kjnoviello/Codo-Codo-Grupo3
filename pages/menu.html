@@ -2,12 +2,53 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/menu.css">
-    <title>Menu</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" 
+    rel="stylesheet" />
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Flippo - Resto & Bar gourmet</title>
+    <meta name="descripción" content="Filippo: Restaurante y bar en un lugar muy agradable que ofrece almuerzos y cenas variadas de calidad gourmet. Elaboramos nuestros platos con ingredientes frescos y sanos, incluyendo opciones vegetarianas y veganas.">
+    <meta name="keywords" content="Filippo, restaurante, bar, almuerzo, cena, gourmet, ingredientes frescos, comida saludable, comida vegetariana, comida vegana, Buenos Aires">
+    <meta property="og:title" content="Filippo - Restaurante y Bar" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://filippo.vercel.app/" />
+    <meta property="og:image" content="https://filippo.vercel.app/assets/images/filippo_restaurant.jpg"/>
+    <meta property="og:site_name" content="Filippo - Restaurante y Bar"/>
 </head>
 <body>
+
+    <!-- NAV START -->
+    <header>
+        <nav class="nav">
+            <a href="../index.html" class="nav__link">
+                <img class="nav__link-favicon" src="../assets/favicon.png" alt="">
+                <img src="../assets/logo.png" alt="logo del negocio">
+            </a>
+            <div class="nav__menu" id="nav__menu">
+                <ul class="ul ">
+                    <li class="ul__item">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="ul__item">
+                        <a href="">Nosotros</a>
+                    </li>
+                    <li class="ul__item">
+                        <a href="../pages/menu.html">Menu</a>
+                    </li>
+                    <li class="ul__item">
+                        <a href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <button class="nav__button nav__button_hide">Reservar</button>
+                </ul>
+            </div>
+            <button class="nav__button-menu"><i class="ri-menu-line"></i></button>
+            <button class="nav__button">Reservar</button>
+        </nav>
+    </header>
 
     <main>
         <section class="section-header">
@@ -439,12 +480,43 @@
 
     </main>
 
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="footer__container">
+            <h3 class="footer__title">Filippo</h3>
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h6 class="footer__subtitle">Ubicación</h6>
+                    <p class="footer__text">Av. 9 de Julio 2444 - Buenos Aires</p>
+                </div>
+                <div class="footer__info">
+                    <h6 class="footer__subtitle">Horario de apertura</h6>
+                    <p class="footer__text">Lunes a Viernes</p>
+                    <p class="footer__text">10:00 a.m. - 20:00 p.m</p>
+                    <p class="footer__text">Teléfono: 11-3422-9866</p>
+                </div>
+                <div class="footer__info">
+                    <h6 class="footer__subtitle">Redes sociales</h6>
+                    <div class="footer__social">
+                        <div class="social__icon">
+                            <i class="ri ri-instagram-line"></i>
+                        </div>
+                        <div class="social__icon">
+                            <i class="ri ri-twitter-line"></i>
+                        </div>
+                        <div class="social__icon">
+                            <i class="ri ri-facebook-circle-line"></i>
+                        </div>
+                        <div class="social__icon">
+                            <i class="ri ri-youtube-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h6 class="footer__credit">Desarrollado por Grupo 3 - Codo a Codo - 2024</h6>
+        </section>
+    </footer>
 
-
-
-
-
-    
     <!-- Script -->
     <script src="../js/main.js"></script>
 </body>
