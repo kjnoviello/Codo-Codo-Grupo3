@@ -1,80 +1,39 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* Reset params */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Variables de estilo */
-:root {
-  --font-family: "Montserrat", sans-serif;
-
-  --h1-size: 76px;
-  --h2-size: 56px;
-  --h3-size: 42px;
-  --h4-size: 28px;
-  --h5-size: 26px;
-  --h6-size: 22px;
-  --p-size: 18px;
-
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --primary-color: #f44749;
-  --secondary-color: #f3af24;
-  --section-bg-color: #f9f9f9;
-  --title-color: #565758;
-  --news-title-color: #292828;
-  --p-color: #717275;
-  --border-color: #eaeaea;
-}
-
-/* Estilos en común a todas las páginas */
-body {
-  background: var(--white-color);
-  font-family: var(--font-family);
-}
-
-.story__container {
-  margin: 0 auto;
-  width: min(90%, 1200rem);
-}
-
 /* Hero image */
+
 .story__hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url("../assets/images/header/header01.jpg");
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-    url("../assets/images/header/header01.jpg");
+  padding: 10rem;
+  text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 40vh;
-  width: 100%;
+  overflow: hidden;
 }
 
-.story__content {
-  text-align: center;
+.story__content h1,
+.story__content p {
   color: var(--white-color);
 }
 
-.story__heading {
-  font-size: 6vw;
-  margin-bottom: 0.5rem;
+.story__content h1 {
+  font-size: 38px;
+  margin-bottom: 1rem;
 }
 
-.story__text {
-  font-size: 3vw;
+.story__content p {
+  display: block;
+  font-weight: 900;
+}
+
+@media (min-width: 992px) {
+  .story__content h1 {
+    font-size: var(--h1-size);
+  }
 }
 
 /* main */
@@ -84,10 +43,14 @@ body {
 }
 
 .story__news {
-  padding: 2rem;
+  padding-inline: 16px;
+  padding-top: 110px;
 }
 
 @media (min-width: 992px) {
+  .story__news {
+    padding-inline: 2rem;
+  }
   .story__news-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -222,6 +185,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+  padding-bottom: 110px;
 }
 
 @media (min-width: 992px) {

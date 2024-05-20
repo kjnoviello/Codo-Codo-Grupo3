@@ -3,7 +3,6 @@ body {
     /*puse esto xq no me tomaba --font-body-family en css/main.css*/
 }
 
-
 .section-header {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../assets/images/header/header02.jpg);
     display: flex;
@@ -19,14 +18,10 @@ body {
     overflow: hidden;
 }
 
-
-
 .section-header-title h1,
 .section-header-title p {
     color: var(--white-color);
 }
-
-
 
 .section-header-title h1 {
     font-size: 38px;
@@ -38,7 +33,6 @@ body {
     font-weight: 900;
 }
 
-
 .section-main {
     background-color: var(--section-bg-color);
     display: block;
@@ -48,8 +42,6 @@ body {
     background-color: var(--white-color);
 }
 
-
-
 .section-title h2 {
     display: flex;
     font-size: 32px;
@@ -57,8 +49,6 @@ body {
     margin-bottom: 2rem;
     justify-content: center;
 }
-
-
 
 .section-container {
     display: flex;
@@ -68,14 +58,12 @@ body {
     gap: 20px;
 }
 
-
 .section-card {
     display: flex;
     flex-direction: column;
     max-width: 340px;
     width: 100%;
 }
-
 
 .card-img {
     position: relative;
@@ -86,10 +74,6 @@ body {
     height: 100%;
 }
 
-
-
-
-
 .card-info {
     padding: 20px 20px 30px;
     font-size: 18px;
@@ -99,13 +83,11 @@ body {
     gap: 20px;
 }
 
-
-
 .card-info>div:nth-child(1),
 .card-info>div:nth-child(2) {
     display: flex;
     align-items: center;
-   gap: 20px;
+    gap: 20px;
 }
 
 .card-info>div:nth-child(2) {
@@ -131,11 +113,10 @@ body {
     box-shadow: 0 0 50px rgba(0, 0, 0, .175);
 }
 
-
-.reviews-stars svg {
-    color: var(--secondary-color);
-    width: 20px;
-    height: 20px;
+/* Star icon */
+.ri-star-fill, .ri-star-line{
+    color: #f3d634;
+    font-size: 18px;
 }
 
 .card-info p {
@@ -146,7 +127,6 @@ body {
     text-decoration: line-through;
     font-size: 14px;
 }
-
 
 
 @media screen and (min-width: 992px) {
@@ -161,7 +141,7 @@ body {
     .card-info h6 {
         font-size: var(--h6-size);
     }
-   
+
     .card-img img{
         width: 100%;
         height: auto;

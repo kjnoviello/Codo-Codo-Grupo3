@@ -2,17 +2,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <meta name="viewport" content="width=, initial-scale=1.0">
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/contacto.css" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" 
-    rel="stylesheet" />
-  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/footer.css">
-  <title>Flippo</title>
+  <link rel="stylesheet" href="../css/contacto.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <title>Flippo - Resto & Bar gourmet</title>
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" 
+  rel="stylesheet" />
+  <meta name="descripción" content="Filippo: Restaurante y bar en un lugar muy agradable que ofrece almuerzos y cenas variadas de calidad gourmet. Elaboramos nuestros platos con ingredientes frescos y sanos, incluyendo opciones vegetarianas y veganas.">
+  <meta name="keywords" content="Filippo, restaurante, bar, almuerzo, cena, gourmet, ingredientes frescos, comida saludable, comida vegetariana, comida vegana, Buenos Aires">
+  <meta property="og:title" content="Filippo - Restaurante y Bar" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://filippo.vercel.app/" />
+  <meta property="og:image" content="https://filippo.vercel.app/assets/images/filippo_restaurant.jpg"/>
+  <meta property="og:site_name" content="Filippo - Restaurante y Bar"/>
 </head>
 
 <body>
@@ -29,7 +36,7 @@
                     <a href="../index.html">Home</a>
                 </li>
                 <li class="ul__item">
-                    <a href="">Nosotros</a>
+                    <a href="./story.html">Nosotros</a>
                 </li>
                 <li class="ul__item">
                     <a href="./menu.html">Menu</a>
@@ -47,27 +54,21 @@
 
   <!-- MAIN START -->
   <main>
-    <header class="site-header site-contact-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-12 mx-auto">
-            <h1 class="text-white">Di Hola</h1>
-            <strong class="text-white">Estamos felices de ponernos en contacto contigo</strong>
-          </div>
-        </div>
+
+    <section class="section__contact">
+      <div class="section__contact-title">
+          <h1>Di Hola</h1>
+          <p>Estamos felices de ponernos en contacto contigo</p>
       </div>
-      <div class="overlay"></div>
-    </header>
-    <section class="contact section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="mb-4">Dejanos un Mensaje</h2>
-          </div>
+    </section>
+
+    <section class="contact__main">
+        <h2 class="contact__main-title">Dejanos un Mensaje</h2>
+        <div class="contact__container">
 
           <!-- FORM START -->
-          <div class="col-lg-6 col-12">
-            <form action="#" class="custom-form contact-form row large-form">
+          <div class="contact__form">
+            <form action="#" class="custom-form">
               <div class="col-lg-6 col-12">
                 <label for="contact-name" class="form-label">Nombre Completo</label>
                 <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Tu nombre" />
@@ -76,9 +77,6 @@
                 <label for="contact-phone" class="form-label">Número de teléfono</label>
                 <input type="text" name="contact-phone" id="contact-phone" class="form-control"
                   placeholder="Tu teléfono" />
-                <div class="col-lg-5 col-12 ms-auto">
-
-                </div>
               </div>
               <div class="col-12">
                 <label class="form-label" for="contact-email">Email</label>
@@ -87,7 +85,7 @@
               </div>
               <div class="col-12">
                 <label for="contact-message" class="form-label">Mensaje</label>
-                <textarea name="contact-message" id="contact-message" rows="5" class="form-control"
+                <textarea name="contact-message" id="contact-message" rows="5" class="form-control form-control-area"
                   placeholder="Tu mensaje"></textarea>
               </div>
               <div class="col-12">
@@ -99,24 +97,31 @@
           </div>
 
           <!-- HORARIO -->
-          <div class="col-lg-4 col-12 mx-auto mt-lg-5 mt-4">
-            <h5>Días de Semanas</h5>
-            <div class="d-flex mb-lg-3">
-              <p>Lunes a Viernes</p>
-              <p class="ms-5">10:00 AM - 08:00 PM</p>
+          <div class="contact__schedule">
+            <div class="contact__line">
+              <div></div>
             </div>
-            <h5>Fin de Semanas</h5>
-            <div class="d-flex mb-lg-3">
-              <p>Sábado y Domingo</p>
-              <p class="ms-5">11:00 AM - 11:00 PM</p>
+            <h4 class="contact__schedule-title">Horarios de Atención y Servicio</h4>
+            <p class="contact__schedule-text">Nuestro restaurante está comprometido a brindarte una experiencia culinaria excepcional y un servicio al cliente de primera clase.</p>
+            <div>
+              <h6>Días Laborales: 10:00 AM - 08:00 PM</h6>
+              <p>Durante estos días, nuestro personal está a tu disposición para responder cualquier consulta o requerimiento. Si necesitas hacer una reserva, obtener información sobre nuestro menú o tener alguna solicitud especial, no dudes en contactarnos.</p>
             </div>
-          </div>
-          <div class="col-12">
-            <h4 class="mt-5 mb-4">Av. 9 de Julio 2444 - Buenos Aires</h4>
-            <div id="map" class="google-map pt-3"></div>
+            <div>
+              <h6>Sábado y Domingo: 11:00 AM - 11:00 PM</h6>
+              <p>Durante el fin de semana, puedes visitarnos para un desayuno tardío, un almuerzo prolongado o una cena relajante. Aprovecha estos horarios extendidos para deleitarte con nuestras especialidades y compartir momentos especiales con tus seres queridos.</p>
+            </div>
+            <div class="contact__line">
+              <div></div>
+            </div>
           </div>
         </div>
-      </div>
+
+        <!-- mapa -->
+        <div class="contact__map">
+          <h4 class=""><u>Dirección:</u> Av. 9 de Julio 2444 - Buenos Aires</h4>
+          <div id="map" class="google-map pt-3"></div>
+        </div>
     </section>
   </main>
   
