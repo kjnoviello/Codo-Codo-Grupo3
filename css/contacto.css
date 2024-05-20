@@ -117,6 +117,7 @@ label {
   border-radius: 0.25rem;
   appearance: none;
   transition: border color 0.15s ease-in-out, box shadow 0.15s ease-in-out;
+  box-shadow: 0px 0px 50px rgb(137, 135, 135);
 }
 
 input,
