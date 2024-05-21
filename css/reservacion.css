@@ -20,8 +20,12 @@
     justify-content: space-between;
     align-items: center;
     & button{
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        font-size: var(--h2-size);
     }
 }
 
@@ -66,5 +70,10 @@
     }
     .reservacion{
         padding-inline: 20px;
+    }
+    .reservacion__head{
+        & button{
+            font-size: 38px;
+        }
     }
 }
