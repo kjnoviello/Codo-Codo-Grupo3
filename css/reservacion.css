@@ -1,0 +1,70 @@
+.reservacion{
+    background-color: rgba(0, 0, 0, 0.522);
+    height: 100%;
+    padding-block: 50px;
+    padding-inline: 100px;
+    position:fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    width: 90%;
+}
+
+/* #reservacion-hide{
+    display: none;
+} */
+
+.reservacion__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & button{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.reservacion__main{
+    background-color: white;
+    padding: 50px;
+    padding-top: 20px !important;
+}
+
+.reservacion__container{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+.reservacion__img{
+    background-image: url("../assets/images/modal/modal21.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 50%;
+    overflow: hidden;
+}
+
+.form-control{
+    box-shadow: none;
+}
+.reservation__form-group{
+    width: 100%;
+}
+
+.reservation__form-row{
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .reservation__form-row{
+        flex-direction: column;
+    }
+    .reservacion{
+        padding-inline: 20px;
+    }
+}

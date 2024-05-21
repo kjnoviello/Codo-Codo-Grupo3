@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/reservacion.css">
+    <title>Reserva</title>
 </head>
 <body>
     <main class="reservation">
@@ -15,34 +16,34 @@
             <div class="reservation__form-container">
                 <form class="reservation__form" action="">
                     <div class="reservation__form-row">
-                        <div class="reservation__form-group">
-                            <div class="reservation__form-item">
-                                <label class="reservation__label" for="nombres"></label>
-                                <input class="reservation__input" type="text" name="nombres" id="nombres" placeholder="Nombre completo">
-                            </div>
-                            <div class="reservation__form-item">
-                                <label class="reservation__label" for="telefono"></label>
-                                <input class="reservation__input" type="tel" name="telefono" id="telefono" placeholder="Teléfono">
-                            </div>
-                            <div class="reservation__form-item">
-                                <label class="reservation__label" for="fecha"></label>
-                                <input class="reservation__input" type="date" name="fecha" id="fecha" placeholder="Fecha">
-                            </div>
+                      <div class="reservation__form-group">
+                        <div class="reservation__form-item">
+                            <label class="reservation__label" for="nombres"></label>
+                            <input class="reservation__input" type="text" name="nombres" id="nombres" placeholder="Nombre completo">
                         </div>
-                        <div class="reservation__form-group">
-                            <div class="reservation__form-item">
-                                <label class="reservation__label" for="email"></label>
-                                <input class="reservation__input" type="email" name="email" id="email" placeholder="Email">
-                            </div>
-                            <div class="reservation__form-item">
-                                <label class="reservation__label" for="comensales"></label>
-                                <input class="reservation__input" type="number" name="comensales" id="comensales" placeholder="Comensales">
-                            </div>
-                            <div class="reservation__form-item">
-                                <label class="reservation__label" for="horario"></label>
-                                <input class="reservation__input" type="time" name="horario" id="horario" placeholder="Horario">
-                            </div>
+                        <div class="reservation__form-item">
+                            <label class="reservation__label" for="telefono"></label>
+                            <input class="reservation__input" type="tel" name="telefono" id="telefono" placeholder="Teléfono">
                         </div>
+                        <div class="reservation__form-item">
+                            <label class="reservation__label" for="fecha"></label>
+                            <input class="reservation__input" type="date" name="fecha" id="fecha" placeholder="Fecha">
+                        </div>
+                      </div>
+                      <div class="reservation__form-group">
+                        <div class="reservation__form-item">
+                            <label class="reservation__label" for="email"></label>
+                            <input class="reservation__input" type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="reservation__form-item">
+                            <label class="reservation__label" for="comensales"></label>
+                            <input class="reservation__input" type="number" name="comensales" id="comensales" placeholder="Comensales">
+                        </div>
+                        <div class="reservation__form-item">
+                            <label class="reservation__label" for="horario"></label>
+                            <input class="reservation__input" type="time" name="horario" id="horario" placeholder="Horario">
+                        </div>
+                      </div>
                     </div>
                     <div class="reservation__form-group">
                         <label class="reservation__label" for="observaciones"></label>
@@ -54,9 +55,72 @@
                 </form>
             </div>
             <div class="reservation__image-container">
-                <img class="reservation__image" src="../assets/images/modal/modal1.jpg" alt="">
+                <img class="reservation__image" src="../assets/images/modal/modal2.jpg" alt="">
             </div>
         </section>
     </main>
+</body>
+</html>
+
+
+
+<!-- ------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/contacto.css">
+  <link rel="stylesheet" href="../css/reservacion.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <main class="reservacion">
+    <section class="reservacion__main contact__main">
+      <h2 class="contact__main-title">Reservar una mesa</h2>
+      <div class="contact__container reservacion__container">
+
+        <!-- FORM START -->
+        <div class="contact__form">
+          <form action="#" class="custom-form">
+            <div>
+              <label for="contact-name" class="form-label">Nombre Completo</label>
+              <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Tu nombre" />
+            </div>
+            <div>
+              <label for="contact-phone" class="form-label">Número de teléfono</label>
+              <input type="text" name="contact-phone" id="contact-phone" class="form-control"
+                placeholder="Tu teléfono" />
+            </div>
+            <div>
+              <label class="form-label" for="contact-email">Email</label>
+              <input type="email" name="contact-email" id="contact-email" placeholder="Tu email" class="form-control"
+                pattern="[^@]*@[^@]*" />
+            </div>
+            <div>
+              <label for="contact-message" class="form-label">Mensaje</label>
+              <textarea name="contact-message" id="contact-message" rows="5" class="form-control form-control-area"
+                placeholder="Tu mensaje"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="form-control">
+                Enviar Mensaje
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- imagen -->
+        <div class="contact__schedule">
+          <img src="../assets/images/modal/modal2.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
 </html>
