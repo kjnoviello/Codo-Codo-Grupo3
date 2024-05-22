@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/contacto.css" />
+  <link rel="stylesheet" href="../css/contacto.css"/>
+  <link rel="stylesheet" href="../css/reservacion.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <title>Flippo - Resto & Bar gourmet</title>
@@ -23,14 +24,15 @@
 </head>
 
 <body>
+
   <!-- NAV START -->
   <header>
-    <nav class="nav">
+    <nav class="nav fade-in-top">
         <a href="../index.html" class="nav__link">
             <img class="nav__link-favicon" src="../assets/favicon.png" alt="">
             <img src="../assets/logo.png" alt="logo del negocio">
         </a>
-        <div class="nav__menu" id="nav__menu">
+        <div class="nav__menu fade-in-top" id="nav__menu">
             <ul class="ul ">
                 <li class="ul__item">
                     <a href="../index.html">Home</a>
@@ -44,13 +46,75 @@
                 <li class="ul__item">
                     <a href="./contacto.html">Contacto</a>
                 </li>
-                <button class="nav__button nav__button_hide">Reservar</button>
+                <button class="nav__button nav__button_hide openReservacionResp">Reservar</button>
             </ul>
         </div>
         <button class="nav__button-menu"><i class="ri-menu-line"></i></button>
-        <button class="nav__button">Reservar</button>
+        <button class="nav__button openReservacion">Reservar</button>
     </nav>
-  </header>
+</header>
+
+<!-- empieza modal -->
+<main class="reservacion hideReservacion fade-in-top" id="openReservacion">
+    <section class="reservacion__main contact__main">
+        <div class="reservacion__head">
+            <h2 class="contact__main-title">Reservar una mesa</h2>
+            <button id="closeReservation">X</button>
+        </div>
+        <div class="contact__container reservacion__container">
+
+            <!-- FORM START -->
+            <div class="contact__form">
+                <form action="#" class="custom-form">
+                    <div class="reservation__form-row">
+                        <div class="reservation__form-group">
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="nombres">Nombre completo</label>
+                                <input class="form-control" type="text" name="nombres" id="nombres" placeholder="Su nombre">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="telefono">Número de teléfono</label>
+                                <input class="form-control" type="tel" name="telefono" id="telefono" placeholder="11-4555-6677">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="fecha">Fecha</label>
+                                <input class="form-control" type="date" name="fecha" id="fecha">
+                            </div>
+                        </div>
+                        <div class="reservation__form-group">
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="email">Correo electrónico</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="email@email.com">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="comensales">Número de personas</label>
+                                <input class="form-control" type="number" name="comensales" id="comensales" placeholder="Cantidad">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="horario">Horario</label>
+                                <input class="form-control" type="time" name="horario" id="horario" placeholder="Horario">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="contact-message" class="form-label">Mensaje</label>
+                        <textarea name="contact-message" id="contact-message" rows="5" class="form-control form-control-area"
+                            placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="form-control">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- imagen -->
+            <div class=" reservacion__img">
+            </div>
+        </div>
+    </section>
+  </main>
+  <!-- termina modal -->
 
   <!-- MAIN START -->
   <main>
