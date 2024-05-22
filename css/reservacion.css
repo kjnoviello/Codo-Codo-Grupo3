@@ -1,18 +1,13 @@
-body{
-    width: 100%;
-}
-
 .reservacion{
     background-color: rgba(0, 0, 0, 0.522);
     height: 100%;
-    padding-block: 50px;
-    padding-inline: 100px;
+    padding-block: 90px;
     position:fixed;
     z-index: 99999;
     top: 0;
     left: 0;
     bottom: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     width: 100%;
 }
 
@@ -38,14 +33,12 @@ body{
     background-color: white;
     padding: 50px;
     padding-top: 20px !important;
-    width: 80%;
 }
 
 .reservacion__container{
     width: 100%;
     height: auto;
     gap: 10px;
-    /* padding-bottom: 0; */
 }
 
 .reservacion__img{
@@ -75,15 +68,16 @@ body{
     .reservation__form-row{
         flex-direction: column;
     }
-    .reservacion{
-        padding-inline: 20px;
-    }
     .reservacion__head{
         & button{
             font-size: 38px;
         }
     }
+    .reservacion__main{
+        padding: 20px;
+    }
 }
+
 
 /* Libreria de animacion */
 
