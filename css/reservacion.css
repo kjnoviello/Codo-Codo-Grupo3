@@ -1,13 +1,13 @@
 .reservacion{
     background-color: rgba(0, 0, 0, 0.522);
     height: 100%;
-    padding-block: 90px;
+    padding-top: 40px;
     position:fixed;
     z-index: 99999;
     top: 0;
     left: 0;
     bottom: 0;
-    overflow-y: auto;
+    overflow-y: scroll;
     width: 100%;
 }
 
@@ -109,5 +109,11 @@
         -webkit-transform: translateY(0);
             transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .reservation__form-row{
+        gap: 0;
     }
 }
