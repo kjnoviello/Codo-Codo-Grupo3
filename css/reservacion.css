@@ -63,6 +63,11 @@
     gap: 20px;
 }
 
+#closeReservation:hover{
+    color: var(--primary-color) ;
+    transition: all 0.3s;
+}
+
 
 @media (max-width: 768px) {
     .reservation__form-row{
