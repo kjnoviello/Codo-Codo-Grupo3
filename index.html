@@ -28,21 +28,21 @@
         <nav class="nav fade-in-top">
             <a href="../index.html" class="nav__link">
                 <img class="nav__link-favicon" src="./assets/favicon.png" alt="">
-                <img src="../assets/logo.png" alt="logo del negocio">
+                <img class="nav__link-img" src="../assets/logo.png" alt="logo del negocio">
             </a>
             <div class="nav__menu fade-in-top" id="nav__menu">
-                <ul class="ul ">
-                    <li class="ul__item">
-                        <a href="./index.html">Home</a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__item-link" href="./index.html">Home</a>
                     </li>
-                    <li class="ul__item">
-                        <a href="./pages/story.html">Nosotros</a>
+                    <li class="nav__item">
+                        <a class="nav__item-link" href="./pages/story.html">Nosotros</a>
                     </li>
-                    <li class="ul__item">
-                        <a href="./pages/menu.html">Menu</a>
+                    <li class="nav__item">
+                        <a class="nav__item-link" href="./pages/menu.html">Menu</a>
                     </li>
-                    <li class="ul__item">
-                        <a href="./pages/contacto.html">Contacto</a>
+                    <li class="nav__item">
+                        <a class="nav__item-link" href="./pages/contacto.html">Contacto</a>
                     </li>
                     <button class="nav__button nav__button_hide openReservacionResp">Reservar</button>
                 </ul>
@@ -114,14 +114,6 @@
     </main>
     <!-- termina modal -->
 
-
-
-
-
-
-
-
-
     <!-- MAIN START -->
     <!-- HEAD AND VIDEO -->
     <main>
@@ -131,25 +123,25 @@
                 Su navegador no soporta este formato de video.
             </video>
             <article class="section__text">
-                <div>
-                    <h1>Deliciosos filetes</h1>
+                <div class="section__header">
+                    <h1 class="section__title">Deliciosos filetes</h1>
                     <br>
-                    <div>
-                        <h4>4.4/5</h4>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-line"></i>
+                    <div class="section__rating">
+                        <h4 class="section__rating-score">4.4/5</h4>
+                        <i class="section__rating-star ri-star-fill"></i>
+                        <i class="section__rating-star ri-star-fill"></i>
+                        <i class="section__rating-star ri-star-fill"></i>
+                        <i class="section__rating-star ri-star-fill"></i>
+                        <i class="section__rating-star ri-star-line"></i>
                     </div>
-                    <p>De <strong>más de 1,206 </strong>reseñas de clientes</p>
+                    <p class="section__reviews">De <strong>más de 1,206 </strong>reseñas de clientes</p>
                 </div>
                 <div class="section__carrousel">
-                    <img class="carrousel_img" src="./assets/images/carrousel/gif.gif" alt="">
+                    <img class="carrousel_img" src="./assets/images/carrousel/gif.gif" alt="Deliciosos filetes">
                 </div>
             </article>
             <article class="section__overlaid">
-            </article>
+            </article>            
         </section>
 
         <!-- MENU ESPECIALES -->
@@ -158,8 +150,8 @@
             <article class="section__container">
 
                 <div class="section__card">
-                    <div class="card_img">
-                        <img src="./assets/images/breakfast/breakfast01.jpg" alt="foto de un desayuno">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/breakfast/breakfast01.jpg" alt="foto de un desayuno">
                         <span class="tag card__tag">Desayuno</span>
                     </div>
                     <div class="card__info">
@@ -182,8 +174,8 @@
                 </div>
 
                 <div class="section__card">
-                    <div class="card_img">
-                        <img src="./assets/images/lunch/lunch02.jpg" alt="foto de un desayuno">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/lunch/lunch02.jpg" alt="foto de un desayuno">
                         <span class="tag card__tag">Almuerzo</span>
                     </div>
                     <div class="card__info">
@@ -206,8 +198,8 @@
                 </div>
 
                 <div class="section__card">
-                    <div class="card_img">
-                        <img src="./assets/images/dinner/dinner03.jpg" alt="foto de un desayuno">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/dinner/dinner03.jpg" alt="foto de un desayuno">
                         <span class="tag card__tag">Cena</span>
                     </div>
                     <div class="card__info">
@@ -230,8 +222,8 @@
                 </div>
 
                 <div class="section__card">
-                    <div class="card_img">
-                        <img src="./assets/images/dinner/dinner02.jpg" alt="foto de un desayuno">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/dinner/dinner02.jpg" alt="foto de un desayuno">
                         <span class="tag card__tag">Cena</span>
                     </div>
                     <div class="card__info">
@@ -254,8 +246,8 @@
                 </div>
 
                 <div class="section__card">
-                    <div class="card_img">
-                        <img src="./assets/images/breakfast/breakfast02.jpg" alt="foto de un desayuno">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/breakfast/breakfast02.jpg" alt="foto de un desayuno">
                         <span class="tag card__tag">Desayuno</span>
                     </div>
                     <div class="card__info">
@@ -278,8 +270,8 @@
                 </div>
 
                 <div class="section__card">
-                    <div class="card_img">
-                        <img src="./assets/images/lunch/lunch01.jpg" alt="foto de un desayuno">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/lunch/lunch01.jpg" alt="foto de un desayuno">
                         <span class="tag card__tag">Almuerzo</span>
                     </div>
                     <div class="card__info">
@@ -312,50 +304,50 @@
             <h2 class="section__h2">Noticias y eventos</h2>
             <article class="section__container">
                 <div class="section_events">
-                    <div>
-                        <img src="./assets/images/news/news06.jpg" alt="">
+                    <div class="event">
+                        <img class="event__image" src="./assets/images/news/news06.jpg" alt="">
                         <span class="tag event__tag">Presentando</span>
-                        <h5>Consejos para un estilo de vida saludable y una vida feliz</h5>
+                        <h5 class="event__title">Consejos para un estilo de vida saludable y una vida feliz</h5>
                     </div>
-                    <div>
-                        <img src="./assets/images/news/news07.jpg" alt="">
+                    <div class="event">
+                        <img class="event__image" src="./assets/images/news/news07.jpg" alt="">
                         <span class="tag event__tag">Presentando</span>
-                        <h5>Como hacer una comida saludable</h5>
+                        <h5 class="event__title">Como hacer una comida saludable</h5>
                     </div>
                 </div>
                 <div class="section_news">
-                    <div>
-                        <img src="./assets/images/news/news04.jpg" alt="">
+                    <div  class="news">
+                        <img class="news__image" src="./assets/images/news/news04.jpg" alt="">
                         <div class="card__info">
-                            <div>
-                                <h4>¿El coco es bueno para tí?</h4>
+                            <div class="news__header">
+                                <h4 class="news__title">¿El coco es bueno para tí?</h4>
                             </div>
-                            <div>
+                            <div class="news__footer">
                                 <span class="event__tag event_tag--promociones">Promociones</span>
-                                <p>8 de abril del 2024</p>
+                                <p class="news__date">8 de abril del 2024</p>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="./assets/images/news/news01.jpg" alt="">
+                    <div  class="news">
+                        <img class="news__image" src="./assets/images/news/news01.jpg" alt="">
                         <div class="card__info">
-                            <div>
-                                <h4>Fideos de filet de salmón</h4>
+                            <div class="news__header">
+                                <h4 class="news__title">Fideos de filet de salmón</h4>
                             </div>
-                            <div>
+                            <div class="news__footer">
                                 <span class="event__tag event_tag--noticias">Noticias</span>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="./assets/images/news/news05.jpg" alt="">
+                    <div  class="news">
+                        <img class="news__image" src="./assets/images/news/news05.jpg" alt="">
                         <div class="card__info">
-                            <div>
-                                <h4>Hacer una ensalada saludable</h4>
+                            <div class="news__header">
+                                <h4 class="news__title">Hacer una ensalada saludable</h4>
                             </div>
-                            <div>
+                            <div class="news__footer">
                                 <span class="event__tag event_tag--promociones">Reunión</span>
-                                <p>30 de abril del 2024</p>
+                                <p class="news__date">30 de abril del 2024</p>
                             </div>
                         </div>
                     </div>

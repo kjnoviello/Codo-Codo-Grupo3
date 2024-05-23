@@ -43,44 +43,50 @@
   flex-direction: column;
 }
 
-.contact__line{
+.contact__line-container{
   display: flex;
   justify-content: center;
-  & div{
-    display: flex;
-    width: 70%;
-    height: 2px;
-    background-color: var(--secondary-color);
-    margin-block: 20px;
-  }
+}
+
+.contact_line{
+  margin-block: 20px;
+  display: flex;
+  width: 70%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  
 }
 
 .contact__schedule{
   display: flex;
   flex-direction: column;
   text-align: center;
-  & p{
-    color: var(--p-color);
-    margin-block: 10px;
-    line-height: 1.5;
-  }
-  & h4{
-    font-size: var(--h4-size);
-    margin-bottom: 20px;
-  }
-  & h6{
-    font-size: var(--h6-size);
-    margin-top: 20px;
-  }
+}
+
+.contact__schedule-title{
+  font-size: var(--h4-size);
+  margin-bottom: 20px;
+}
+
+.contact__schedule-subtitle{
+  font-size: var(--h6-size);
+  margin-top: 20px;
+}
+
+.contact__schedule-text{
+  color: var(--p-color);
+  margin-block: 10px;
+  line-height: 1.5;
 }
 
 .contact__map{
   margin-block: 40px;
   margin-bottom: 110px;
-  & h4{
-    font-size: var(--h4-size);
-    margin-bottom: 20px;
-  }
+}
+
+.contact_map-text{
+  font-size: var(--h4-size);
+  margin-bottom: 20px;
 }
 
 

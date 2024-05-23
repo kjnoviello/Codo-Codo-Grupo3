@@ -30,21 +30,21 @@
     <nav class="nav fade-in-top">
         <a href="../index.html" class="nav__link">
             <img class="nav__link-favicon" src="../assets/favicon.png" alt="">
-            <img src="../assets/logo.png" alt="logo del negocio">
+            <img class="nav__link-img" src="../assets/logo.png" alt="logo del negocio">
         </a>
         <div class="nav__menu fade-in-top" id="nav__menu">
-            <ul class="ul ">
-                <li class="ul__item">
-                    <a href="../index.html">Home</a>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__item-link" href="../index.html">Home</a>
                 </li>
-                <li class="ul__item">
-                    <a href="./story.html">Nosotros</a>
+                <li class="nav__item">
+                    <a class="nav__item-link" href="./story.html">Nosotros</a>
                 </li>
-                <li class="ul__item">
-                    <a href="./menu.html">Menu</a>
+                <li class="nav__item">
+                    <a class="nav__item-link" href="./menu.html">Menu</a>
                 </li>
-                <li class="ul__item">
-                    <a href="./contacto.html">Contacto</a>
+                <li class="nav__item">
+                    <a class="nav__item-link" href="./contacto.html">Contacto</a>
                 </li>
                 <button class="nav__button nav__button_hide openReservacionResp">Reservar</button>
             </ul>
@@ -52,10 +52,10 @@
         <button class="nav__button-menu"><i class="ri-menu-line"></i></button>
         <button class="nav__button openReservacion">Reservar</button>
     </nav>
-</header>
+  </header>
 
-<!-- empieza modal -->
-<main class="reservacion hideReservacion fade-in-top" id="openReservacion">
+  <!-- empieza modal -->
+  <main class="reservacion hideReservacion fade-in-top" id="openReservacion">
     <section class="reservacion__main contact__main">
         <div class="reservacion__head">
             <h2 class="contact__main-title">Reservar una mesa</h2>
@@ -162,28 +162,28 @@
 
           <!-- HORARIO -->
           <div class="contact__schedule">
-            <div class="contact__line">
-              <div></div>
+            <div class="contact__line-container">
+              <div class="contact_line"></div>
             </div>
             <h4 class="contact__schedule-title">Horarios de Atención y Servicio</h4>
             <p class="contact__schedule-text">Nuestro restaurante está comprometido a brindarte una experiencia culinaria excepcional y un servicio al cliente de primera clase.</p>
             <div>
-              <h6>Días Laborales: 10:00 AM - 08:00 PM</h6>
-              <p>Durante estos días, nuestro personal está a tu disposición para responder cualquier consulta o requerimiento. Si necesitas hacer una reserva, obtener información sobre nuestro menú o tener alguna solicitud especial, no dudes en contactarnos.</p>
+              <h6 class="contact__schedule-subtitle">Días Laborales: 10:00 AM - 08:00 PM</h6>
+              <p  class="contact__schedule-text">Durante estos días, nuestro personal está a tu disposición para responder cualquier consulta o requerimiento. Si necesitas hacer una reserva, obtener información sobre nuestro menú o tener alguna solicitud especial, no dudes en contactarnos.</p>
             </div>
             <div>
-              <h6>Sábado y Domingo: 11:00 AM - 11:00 PM</h6>
-              <p>Durante el fin de semana, puedes visitarnos para un desayuno tardío, un almuerzo prolongado o una cena relajante. Aprovecha estos horarios extendidos para deleitarte con nuestras especialidades y compartir momentos especiales con tus seres queridos.</p>
+              <h6 class="contact__schedule-subtitle">Sábado y Domingo: 11:00 AM - 11:00 PM</h6>
+              <p  class="contact__schedule-text">Durante el fin de semana, puedes visitarnos para un desayuno tardío, un almuerzo prolongado o una cena relajante. Aprovecha estos horarios extendidos para deleitarte con nuestras especialidades y compartir momentos especiales con tus seres queridos.</p>
             </div>
-            <div class="contact__line">
-              <div></div>
+            <div class="contact__line-container">
+              <div class="contact_line"></div>
             </div>
           </div>
         </div>
 
         <!-- mapa -->
         <div class="contact__map">
-          <h4 class=""><u>Dirección:</u> Av. 9 de Julio 2444 - Buenos Aires</h4>
+          <h4 class="contact_map-text"><u>Dirección:</u> Av. 9 de Julio 2444 - Buenos Aires</h4>
           <div id="map" class="google-map pt-3"></div>
         </div>
     </section>

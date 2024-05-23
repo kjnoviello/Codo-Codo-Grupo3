@@ -19,14 +19,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    & button{
-        width: 60px;
-        height: 60px;
-        background-color: white;
-        border: none;
-        cursor: pointer;
-        font-size: var(--h2-size);
-    }
+}
+
+#closeReservation{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: var(--h2-size);
 }
 
 .reservacion__main{
@@ -73,10 +74,8 @@
     .reservation__form-row{
         flex-direction: column;
     }
-    .reservacion__head{
-        & button{
-            font-size: 38px;
-        }
+    #closeReservation{
+        font-size: 38px;
     }
     .reservacion__main{
         padding: 20px;
