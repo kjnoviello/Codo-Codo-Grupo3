@@ -1,95 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/main.css" />
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/contacto.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <title>Flippo - Resto & Bar gourmet</title>
-  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" 
-  rel="stylesheet" />
-  <meta name="descripción" content="Filippo: Restaurante y bar en un lugar muy agradable que ofrece almuerzos y cenas variadas de calidad gourmet. Elaboramos nuestros platos con ingredientes frescos y sanos, incluyendo opciones vegetarianas y veganas.">
-  <meta name="keywords" content="Filippo, restaurante, bar, almuerzo, cena, gourmet, ingredientes frescos, comida saludable, comida vegetariana, comida vegana, Buenos Aires">
-  <meta property="og:title" content="Filippo - Restaurante y Bar" />
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://filippo.vercel.app/" />
-  <meta property="og:image" content="https://filippo.vercel.app/assets/images/filippo_restaurant.jpg"/>
-  <meta property="og:site_name" content="Filippo - Restaurante y Bar"/>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <title>Flippo - Resto & Bar gourmet</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="descripción"
+      content="Filippo: Restaurante y bar en un lugar muy agradable que ofrece almuerzos y cenas variadas de calidad gourmet. Elaboramos nuestros platos con ingredientes frescos y sanos, incluyendo opciones vegetarianas y veganas."
+    />
+    <meta
+      name="keywords"
+      content="Filippo, restaurante, bar, almuerzo, cena, gourmet, ingredientes frescos, comida saludable, comida vegetariana, comida vegana, Buenos Aires"
+    />
+    <meta property="og:title" content="Filippo - Restaurante y Bar" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://filippo.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://filippo.vercel.app/assets/images/filippo_restaurant.jpg"
+    />
+    <meta property="og:site_name" content="Filippo - Restaurante y Bar" />
+  </head>
 
-<body>
-  <!-- NAV START -->
-  <header>
-    <nav class="nav">
+  <body>
+    <!-- NAV START -->
+    <header>
+      <nav class="nav">
         <a href="../index.html" class="nav__link">
-            <img class="nav__link-favicon" src="../assets/favicon.png" alt="">
-            <img src="../assets/logo.png" alt="logo del negocio">
+          <img class="nav__link-favicon" src="../assets/favicon.png" alt="" />
+          <img src="../assets/logo.png" alt="logo del negocio" />
         </a>
         <div class="nav__menu" id="nav__menu">
-            <ul class="ul ">
-                <li class="ul__item">
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="ul__item">
-                    <a href="./story.html">Nosotros</a>
-                </li>
-                <li class="ul__item">
-                    <a href="./menu.html">Menu</a>
-                </li>
-                <li class="ul__item">
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <button class="nav__button nav__button_hide">Reservar</button>
-            </ul>
+          <ul class="ul">
+            <li class="ul__item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="ul__item">
+              <a href="./story.html">Nosotros</a>
+            </li>
+            <li class="ul__item">
+              <a href="./menu.html">Menu</a>
+            </li>
+            <li class="ul__item">
+              <a href="./contacto.html">Contacto</a>
+            </li>
+            <button class="nav__button nav__button_hide">Reservar</button>
+          </ul>
         </div>
         <button class="nav__button-menu"><i class="ri-menu-line"></i></button>
         <button class="nav__button">Reservar</button>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <!-- MAIN START -->
-  <main>
-
-    <section class="section__contact">
-      <div class="section__contact-title">
+    <!-- MAIN START -->
+    <main>
+      <section class="section__contact">
+        <div class="section__contact-title">
           <h1>Di Hola</h1>
           <p>Estamos felices de ponernos en contacto contigo</p>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <section class="contact__main">
+      <section class="contact__main">
         <h2 class="contact__main-title">Dejanos un Mensaje</h2>
         <div class="contact__container">
-
           <!-- FORM START -->
           <div class="contact__form">
-            <form action="#" class="custom-form">
+            <form action="#" class="custom-form" id="form-contact">
               <div>
-                <label for="contact-name" class="form-label">Nombre Completo</label>
-                <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Tu nombre" />
+                <label for="contact-name" class="form-label"
+                  >Nombre Completo</label
+                >
+                <input
+                  type="text"
+                  name="contact-name"
+                  id="contact-name"
+                  class="form-control"
+                  placeholder="Tu nombre"
+                />
+                <span id="contact-nameError" class="error"></span>
               </div>
               <div>
-                <label for="contact-phone" class="form-label">Número de teléfono</label>
-                <input type="text" name="contact-phone" id="contact-phone" class="form-control"
-                  placeholder="Tu teléfono" />
+                <label for="contact-phone" class="form-label"
+                  >Número de teléfono</label
+                >
+                <input
+                  type="text"
+                  name="contact-phone"
+                  id="contact-phone"
+                  class="form-control"
+                  placeholder="Tu teléfono"
+                />
+                <span id="contact-phoneError" class="error"></span>
               </div>
               <div>
                 <label class="form-label" for="contact-email">Email</label>
-                <input type="email" name="contact-email" id="contact-email" placeholder="Tu email" class="form-control"
-                  pattern="[^@]*@[^@]*" />
+                <input
+                  type="email"
+                  name="contact-email"
+                  id="contact-email"
+                  placeholder="Tu email"
+                  class="form-control"
+                  pattern="[^@]*@[^@]*"
+                />
+                <span id="contact-emailError" class="error"></span>
               </div>
               <div>
                 <label for="contact-message" class="form-label">Mensaje</label>
-                <textarea name="contact-message" id="contact-message" rows="5" class="form-control form-control-area"
-                  placeholder="Tu mensaje"></textarea>
+                <textarea
+                  name="contact-message"
+                  id="contact-message"
+                  rows="5"
+                  class="form-control form-control-area"
+                  placeholder="Tu mensaje"
+                ></textarea>
+                <span id="contact-MessageError" class="error"></span>
               </div>
               <div class="col-12">
-                <button type="submit" class="form-control">
+                <button id="submit-contact" type="submit" class="form-control">
                   Enviar Mensaje
                 </button>
               </div>
@@ -101,15 +148,31 @@
             <div class="contact__line">
               <div></div>
             </div>
-            <h4 class="contact__schedule-title">Horarios de Atención y Servicio</h4>
-            <p class="contact__schedule-text">Nuestro restaurante está comprometido a brindarte una experiencia culinaria excepcional y un servicio al cliente de primera clase.</p>
+            <h4 class="contact__schedule-title">
+              Horarios de Atención y Servicio
+            </h4>
+            <p class="contact__schedule-text">
+              Nuestro restaurante está comprometido a brindarte una experiencia
+              culinaria excepcional y un servicio al cliente de primera clase.
+            </p>
             <div>
               <h6>Días Laborales: 10:00 AM - 08:00 PM</h6>
-              <p>Durante estos días, nuestro personal está a tu disposición para responder cualquier consulta o requerimiento. Si necesitas hacer una reserva, obtener información sobre nuestro menú o tener alguna solicitud especial, no dudes en contactarnos.</p>
+              <p>
+                Durante estos días, nuestro personal está a tu disposición para
+                responder cualquier consulta o requerimiento. Si necesitas hacer
+                una reserva, obtener información sobre nuestro menú o tener
+                alguna solicitud especial, no dudes en contactarnos.
+              </p>
             </div>
             <div>
               <h6>Sábado y Domingo: 11:00 AM - 11:00 PM</h6>
-              <p>Durante el fin de semana, puedes visitarnos para un desayuno tardío, un almuerzo prolongado o una cena relajante. Aprovecha estos horarios extendidos para deleitarte con nuestras especialidades y compartir momentos especiales con tus seres queridos.</p>
+              <p>
+                Durante el fin de semana, puedes visitarnos para un desayuno
+                tardío, un almuerzo prolongado o una cena relajante. Aprovecha
+                estos horarios extendidos para deleitarte con nuestras
+                especialidades y compartir momentos especiales con tus seres
+                queridos.
+              </p>
             </div>
             <div class="contact__line">
               <div></div>
@@ -122,50 +185,54 @@
           <h4 class=""><u>Dirección:</u> Av. 9 de Julio 2444 - Buenos Aires</h4>
           <div id="map" class="google-map pt-3"></div>
         </div>
-    </section>
-  </main>
-  
-  <!-- FOOTER -->
-  <footer class="footer">
-    <section class="footer__container">
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <section class="footer__container">
         <h3 class="footer__title">Filippo</h3>
         <div class="footer__content">
-            <div class="footer__info">
-                <h6 class="footer__subtitle">Ubicación</h6>
-                <p class="footer__text">Av. 9 de Julio 2444 - Buenos Aires</p>
+          <div class="footer__info">
+            <h6 class="footer__subtitle">Ubicación</h6>
+            <p class="footer__text">Av. 9 de Julio 2444 - Buenos Aires</p>
+          </div>
+          <div class="footer__info">
+            <h6 class="footer__subtitle">Horario de apertura</h6>
+            <p class="footer__text">Lunes a Viernes</p>
+            <p class="footer__text">10:00 a.m. - 20:00 p.m</p>
+            <p class="footer__text">Teléfono: 11-3422-9866</p>
+          </div>
+          <div class="footer__info">
+            <h6 class="footer__subtitle">Redes sociales</h6>
+            <div class="footer__social">
+              <div class="social__icon">
+                <i class="ri ri-instagram-line"></i>
+              </div>
+              <div class="social__icon">
+                <i class="ri ri-twitter-line"></i>
+              </div>
+              <div class="social__icon">
+                <i class="ri ri-facebook-circle-line"></i>
+              </div>
+              <div class="social__icon">
+                <i class="ri ri-youtube-line"></i>
+              </div>
             </div>
-            <div class="footer__info">
-                <h6 class="footer__subtitle">Horario de apertura</h6>
-                <p class="footer__text">Lunes a Viernes</p>
-                <p class="footer__text">10:00 a.m. - 20:00 p.m</p>
-                <p class="footer__text">Teléfono: 11-3422-9866</p>
-            </div>
-            <div class="footer__info">
-                <h6 class="footer__subtitle">Redes sociales</h6>
-                <div class="footer__social">
-                    <div class="social__icon">
-                        <i class="ri ri-instagram-line"></i>
-                    </div>
-                    <div class="social__icon">
-                        <i class="ri ri-twitter-line"></i>
-                    </div>
-                    <div class="social__icon">
-                        <i class="ri ri-facebook-circle-line"></i>
-                    </div>
-                    <div class="social__icon">
-                        <i class="ri ri-youtube-line"></i>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <h6 class="footer__credit">Desarrollado por Grupo 3 - Codo a Codo - 2024</h6>
-    </section>
-  </footer>
+        <h6 class="footer__credit">
+          Desarrollado por Grupo 3 - Codo a Codo - 2024
+        </h6>
+      </section>
+    </footer>
 
-  <!-- Script -->
-  <script src="../js/main.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-</body>
-
+    <!-- Script -->
+    <script src="../js/main.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </body>
 </html>
