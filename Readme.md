@@ -26,7 +26,7 @@ https://filippo.vercel.app/
 ## Estado
 El proyecto se encuentra en un MVP inicial y funcional. Actualmente soporta el uso desde dispositivos móviles, tablets, laptops y PCs siendo completamente responsivo. Permite navegar por las distintas páginas y completar los formularios con validaciones. 
 
-### Tecnologías
+## Tecnologías
 
 - Frontend:
 
@@ -38,7 +38,7 @@ El proyecto se encuentra en un MVP inicial y funcional. Actualmente soporta el u
     - **Google Maps**: para mostrar el mapa en contactos con la ubicación
     - **RemixIcon**: usado para los iconos
 
-### Equipo de trabajo:
+## Equipo de trabajo:
 
 - 
     | Rol                  | Nombre               | Redes                                                                                                                             |
