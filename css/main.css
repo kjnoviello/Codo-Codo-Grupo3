@@ -7,28 +7,28 @@
 /* Variables de estilo*/
 :root {
 
-    --font-family:             'Montserrat', sans-serif;
+    --font-family: 'Montserrat', sans-serif;
 
-    --h1-size:                 76px;
-    --h1-size-res:             38px;
-    --h2-size:                 56px;
-    --h2-size-res:             32px;
-    --h3-size:                 42px;
-    --h4-size:                 28px;
-    --h5-size:                 26px;
-    --h6-size:                 22px;
-    --h6-size-res:             18px;
-    --p-size:                  18px;
-    
-    --white-color:                  #FFFFFF;
-    --black-color:                  #000000;
-    --primary-color:                #dc3545;
-    --secondary-color:              #f3af24;
-    --section-bg-color:             #F9F9F9;
-    --title-color:                  #565758;
-    --news-title-color:             #292828;
-    --p-color:                      #5b5b5b;
-    --border-color:                 #eaeaea;
+    --h1-size: 76px;
+    --h1-size-res: 38px;
+    --h2-size: 56px;
+    --h2-size-res: 32px;
+    --h3-size: 42px;
+    --h4-size: 28px;
+    --h5-size: 26px;
+    --h6-size: 22px;
+    --h6-size-res: 18px;
+    --p-size: 18px;
+
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --primary-color: #dc3545;
+    --secondary-color: #f3af24;
+    --section-bg-color: #F9F9F9;
+    --title-color: #565758;
+    --news-title-color: #292828;
+    --p-color: #5b5b5b;
+    --border-color: #eaeaea;
 
 }
 
@@ -36,4 +36,14 @@
 body {
     background: var(--section-bg-color);
     font-family: var(--font-family);
+}
+
+.error {
+
+    display: inline-block;
+    width: 100%;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin: .8rem 0;
+    text-align: center;
 }
