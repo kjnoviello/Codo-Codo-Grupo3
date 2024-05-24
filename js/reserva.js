@@ -30,10 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     `;
 
+    // Para aplicar los estilos
     document.head.appendChild(style);
 
     const form = document.getElementById('reservationForm');
 
+    // Se define un array de objetos con los campos del formulario. Cada uno con su id, mensaje de error y validación
     const campos = [
         { id: 'nombres', message: 'Por favor, ingrese su nombre completo.', regex: /^(?=.{2,25}$)[a-zA-Z]+(?:\s[a-zA-Z]+){0,4}$/ },
         { id: 'telefono', message: 'Por favor, ingrese un número de teléfono válido.', regex: /^[0-9]{6,10}$/ },
@@ -44,35 +46,40 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 'contact-message', message: 'Por favor, ingrese un mensaje.' }
     ];
 
-    // Almacenar los placeholders originales
+    // Almacenar los placeholders originales. Si aparece un error, poder volver a mostrar el placeholder
     const originalPlaceholders = {};
     campos.forEach(campo => {
         const input = document.getElementById(campo.id);
         originalPlaceholders[campo.id] = input.placeholder;
     });
 
+    // Con el forEach se itera por cada uno de los campos y agrega eventos de input y click
     campos.forEach(campo => {
         const input = document.getElementById(campo.id);
         input.classList.add('form-control');
 
+        // Si el campo es de email, se cambia el tipo de entrada a 'text' para deshabilitar la validación del navegador
         if (campo.id === 'email') {
             input.setAttribute('type', 'text');
         }
 
+        // Se agrega un evento para validar el campo en tiempo real
         input.addEventListener('input', function () {
             validarCampo(input, campo);
         });
 
+        // El evento click permite limpiar los mensajes de error al hacer click en el campo a corregir/completar, sin tener que esperar que el mensaje desaparezca
         input.addEventListener('click', function () {
             limpiarMensajesError();
         });
     });
 
+    // Se crea un <div> para mostrar el mensaje de éxito y el estilo
     const mensajeExitoso = document.createElement('div');
     mensajeExitoso.classList.add('mensaje-exitoso');
     mensajeExitoso.id = 'mensaje-exitoso';
     mensajeExitoso.textContent = 'Formulario enviado con éxito.';
-
+    // Agrega el mensaje
     form.appendChild(mensajeExitoso);
 
     form.addEventListener('submit', function (event) {
@@ -81,12 +88,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         campos.forEach(campo => {
             const input = document.getElementById(campo.id);
+            // si un campo no es válido, establece esValido en false y enfoca el campo
             if (!validarCampo(input, campo)) {
                 esValido = false;
                 input.focus();
             }
         });
 
+        //Si todos los campos son válidos, limpia los campos y muestra el mensaje de éxito
         if (esValido) {
             campos.forEach(campo => {
                 const input = document.getElementById(campo.id);
@@ -106,15 +115,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function validarCampo(input, campo) {
+        // obtiene y recorta el valor del campo
         const value = input.value.trim();
+        // limpia los mensajes de errores anteriores
         input.classList.remove('error-placeholder');
         input.placeholder = '';
 
+        // si el valor es vacío o no cumple la validación, muestra el mensaje de error
         if (value === '' || (campo.regex && !campo.regex.test(value)) || (campo.validate && !campo.validate(value))) {
             input.classList.add('invalido');
             input.placeholder = campo.message;
             input.classList.add('error-placeholder');
 
+            // elimina el mensaje de error despues del tiempo establecido
             setTimeout(() => {
                 input.placeholder = originalPlaceholders[campo.id];
                 input.classList.remove('error-placeholder');
