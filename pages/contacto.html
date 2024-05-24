@@ -1,80 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/contacto.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <title>Flippo - Resto & Bar gourmet</title>
-    <link
-      rel="shortcut icon"
-      href="../assets/favicon.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <meta
-      name="descripción"
-      content="Filippo: Restaurante y bar en un lugar muy agradable que ofrece almuerzos y cenas variadas de calidad gourmet. Elaboramos nuestros platos con ingredientes frescos y sanos, incluyendo opciones vegetarianas y veganas."
-    />
-    <meta
-      name="keywords"
-      content="Filippo, restaurante, bar, almuerzo, cena, gourmet, ingredientes frescos, comida saludable, comida vegetariana, comida vegana, Buenos Aires"
-    />
-    <meta property="og:title" content="Filippo - Restaurante y Bar" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://filippo.vercel.app/" />
-    <meta
-      property="og:image"
-      content="https://filippo.vercel.app/assets/images/filippo_restaurant.jpg"
-    />
-    <meta property="og:site_name" content="Filippo - Restaurante y Bar" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/contacto.css"/>
+  <link rel="stylesheet" href="../css/reservacion.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <title>Flippo - Resto & Bar gourmet</title>
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" 
+  rel="stylesheet" />
+  <meta name="descripción" content="Filippo: Restaurante y bar en un lugar muy agradable que ofrece almuerzos y cenas variadas de calidad gourmet. Elaboramos nuestros platos con ingredientes frescos y sanos, incluyendo opciones vegetarianas y veganas.">
+  <meta name="keywords" content="Filippo, restaurante, bar, almuerzo, cena, gourmet, ingredientes frescos, comida saludable, comida vegetariana, comida vegana, Buenos Aires">
+  <meta property="og:title" content="Filippo - Restaurante y Bar" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://filippo.vercel.app/" />
+  <meta property="og:image" content="https://filippo.vercel.app/assets/images/filippo_restaurant.jpg"/>
+  <meta property="og:site_name" content="Filippo - Restaurante y Bar"/>
+</head>
 
-  <body>
-    <!-- NAV START -->
-    <header>
-      <nav class="nav">
+<body>
+
+  <!-- NAV START -->
+  <header>
+    <nav class="nav fade-in-top">
         <a href="../index.html" class="nav__link">
-          <img class="nav__link-favicon" src="../assets/favicon.png" alt="" />
-          <img src="../assets/logo.png" alt="logo del negocio" />
+            <img class="nav__link-favicon" src="../assets/favicon.png" alt="">
+            <img class="nav__link-img" src="../assets/logo.png" alt="logo del negocio">
         </a>
-        <div class="nav__menu" id="nav__menu">
-          <ul class="ul">
-            <li class="ul__item">
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="ul__item">
-              <a href="./story.html">Nosotros</a>
-            </li>
-            <li class="ul__item">
-              <a href="./menu.html">Menu</a>
-            </li>
-            <li class="ul__item">
-              <a href="./contacto.html">Contacto</a>
-            </li>
-            <button class="nav__button nav__button_hide">Reservar</button>
-          </ul>
+        <div class="nav__menu fade-in-top" id="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__item-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__item-link" href="./story.html">Nosotros</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__item-link" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__item-link" href="./contacto.html">Contacto</a>
+                </li>
+                <button class="nav__button nav__button_hide openReservacionResp">Reservar</button>
+            </ul>
         </div>
         <button class="nav__button-menu"><i class="ri-menu-line"></i></button>
-        <button class="nav__button">Reservar</button>
-      </nav>
-    </header>
+        <button class="nav__button openReservacion">Reservar</button>
+    </nav>
+  </header>
 
-    <!-- MAIN START -->
-    <main>
-      <section class="section__contact">
-        <div class="section__contact-title">
+  <!-- empieza modal -->
+  <main class="reservacion hideReservacion fade-in-top" id="openReservacion">
+    <section class="reservacion__main contact__main">
+        <div class="reservacion__head">
+            <h2 class="contact__main-title">Reservar una mesa</h2>
+            <button id="closeReservation">X</button>
+        </div>
+        <div class="contact__container reservacion__container">
+
+            <!-- FORM START -->
+            <div class="contact__form">
+                <form action="#" class="custom-form">
+                    <div class="reservation__form-row">
+                        <div class="reservation__form-group">
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="nombres">Nombre completo</label>
+                                <input class="form-control" type="text" name="nombres" id="nombres" placeholder="Su nombre">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="telefono">Número de teléfono</label>
+                                <input class="form-control" type="tel" name="telefono" id="telefono" placeholder="11-4555-6677">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="fecha">Fecha</label>
+                                <input class="form-control" type="date" name="fecha" id="fecha">
+                            </div>
+                        </div>
+                        <div class="reservation__form-group">
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="email">Correo electrónico</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="email@email.com">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="comensales">Número de personas</label>
+                                <input class="form-control" type="number" name="comensales" id="comensales" placeholder="Cantidad">
+                            </div>
+                            <div class="reservation__form-item">
+                                <label class="form-label" for="horario">Horario</label>
+                                <input class="form-control" type="time" name="horario" id="horario" placeholder="Horario">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="contact-message" class="form-label">Mensaje</label>
+                        <textarea name="contact-message" id="contact-message" rows="5" class="form-control form-control-area"
+                            placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="form-control">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- imagen -->
+            <div class=" reservacion__img">
+            </div>
+        </div>
+    </section>
+  </main>
+  <!-- termina modal -->
+
+  <!-- MAIN START -->
+  <main>
+
+    <section class="section__contact">
+      <div class="section__contact-title">
+
           <h1>Di Hola</h1>
           <p>Estamos felices de ponernos en contacto contigo</p>
         </div>
@@ -145,8 +192,8 @@
 
           <!-- HORARIO -->
           <div class="contact__schedule">
-            <div class="contact__line">
-              <div></div>
+            <div class="contact__line-container">
+              <div class="contact_line"></div>
             </div>
             <h4 class="contact__schedule-title">
               Horarios de Atención y Servicio
@@ -156,33 +203,22 @@
               culinaria excepcional y un servicio al cliente de primera clase.
             </p>
             <div>
-              <h6>Días Laborales: 10:00 AM - 08:00 PM</h6>
-              <p>
-                Durante estos días, nuestro personal está a tu disposición para
-                responder cualquier consulta o requerimiento. Si necesitas hacer
-                una reserva, obtener información sobre nuestro menú o tener
-                alguna solicitud especial, no dudes en contactarnos.
-              </p>
+              <h6 class="contact__schedule-subtitle">Días Laborales: 10:00 AM - 08:00 PM</h6>
+              <p  class="contact__schedule-text">Durante estos días, nuestro personal está a tu disposición para responder cualquier consulta o requerimiento. Si necesitas hacer una reserva, obtener información sobre nuestro menú o tener alguna solicitud especial, no dudes en contactarnos.</p>
             </div>
             <div>
-              <h6>Sábado y Domingo: 11:00 AM - 11:00 PM</h6>
-              <p>
-                Durante el fin de semana, puedes visitarnos para un desayuno
-                tardío, un almuerzo prolongado o una cena relajante. Aprovecha
-                estos horarios extendidos para deleitarte con nuestras
-                especialidades y compartir momentos especiales con tus seres
-                queridos.
-              </p>
+              <h6 class="contact__schedule-subtitle">Sábado y Domingo: 11:00 AM - 11:00 PM</h6>
+              <p  class="contact__schedule-text">Durante el fin de semana, puedes visitarnos para un desayuno tardío, un almuerzo prolongado o una cena relajante. Aprovecha estos horarios extendidos para deleitarte con nuestras especialidades y compartir momentos especiales con tus seres queridos.</p>
             </div>
-            <div class="contact__line">
-              <div></div>
+            <div class="contact__line-container">
+              <div class="contact_line"></div>
             </div>
           </div>
         </div>
 
         <!-- mapa -->
         <div class="contact__map">
-          <h4 class=""><u>Dirección:</u> Av. 9 de Julio 2444 - Buenos Aires</h4>
+          <h4 class="contact_map-text"><u>Dirección:</u> Av. 9 de Julio 2444 - Buenos Aires</h4>
           <div id="map" class="google-map pt-3"></div>
         </div>
       </section>

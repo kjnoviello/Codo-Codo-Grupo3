@@ -53,6 +53,7 @@ document.querySelector("#form-contact").addEventListener("submit", (e) => {
   const inputEmail = document.querySelector("#contact-email").value.trim();
   const inputMessage = document.querySelector("#contact-message").value.trim();
 
+
   const nameError = document.querySelector("#contact-nameError");
   const phoneError = document.querySelector("#contact-phoneError");
   const emailError = document.querySelector("#contact-emailError");
@@ -110,3 +111,20 @@ function validateEmail(email) {
   const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   return re.test(email);
 }
+
+});
+
+
+// toggle modal reservacion
+
+const btnReservacionResp = document.querySelector('.openReservacionResp');
+const btnReservacion = document.querySelector('.openReservacion');
+const showReservacion = document.getElementById('openReservacion');
+const btnCloseReservation = document.getElementById('closeReservation');
+
+
+btnReservacionResp.addEventListener('click', ()=> { showReservacion.classList.toggle('hideReservacion')});
+btnReservacion.addEventListener('click', ()=> { showReservacion.classList.toggle('hideReservacion')});
+btnCloseReservation.addEventListener('click', ()=>{  showReservacion.classList.toggle('hideReservacion')})
+
+
