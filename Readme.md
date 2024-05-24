@@ -2,7 +2,6 @@
 
 # Introducción:
 
-
 Página informativa sobre Filippo's bar & resto. Incluye 3 secciones y un modal para la reservación de mesas. Todo el proyecto es web responsive. 
 
 
@@ -16,11 +15,35 @@ Ubicado en la sección de contacto, se puede enviar un mensaje directo sobre cua
 * Menú
 En la sección de Menú se muestran diferentes platos desde desayunos hasta cenas.
 
-* Registro
-Los usuarios pueden registrarse, indicando su información de contacto, y también su historia clinica (enfermedades preexistentes, alergías)
+* Suscripción
+Contiene un campo para suscribirse y recibir las novedades con respecto alm lugar y los menús.
 
-* Agendar turno
-MediCita permite al usuario filtrar según la especialidad deseada, ver la agenda disponible del médico, y reservar su turno.
 
-* Cancelar turno
-Tienen la posibilidad de cancelar su turno mediante la aplicación en caso de no poder asistir.
+## Demo
+https://filippo.vercel.app/
+
+
+## Estado
+El proyecto se encuentra en un MVP inicial y funcional. Actualmente soporta el uso desde dispositivos móviles, tablets, laptops y PCs siendo completamente responsivo. Permite navegar por las distintas páginas y completar los formularios con validaciones. 
+
+### Tecnologías
+
+- Frontend:
+
+    - **Javascript**
+    - **CSS**
+
+- Librerías Frontend:
+
+    - **Google Maps**: para mostrar el mapa en contactos con la ubicación
+    - **RemixIcon**: usado para los iconos
+
+- Equipo de desarrollo:
+
+    | Rol                  | Nombre               | Redes                                                                                                                             |
+    | :------------------- | :------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+    | `Front End`          | Diana Paola Iturria  | [![GitHub]](https://github.com/DianaIturria)                                                                                      |
+    | `Front End`          | Yago Gomez           | [![GitHub]](https://github.com/YagoGomez83) [![linkedin]](https://www.linkedin.com/in/yago-gomez-320087224/)                      | 
+    | `Front End` & `PM`   | Kevin Noviello       | [![GitHub]](https://github.com/kjnoviello) [![linkedin]](https://www.linkedin.com/in/kevinjoelnoviello/)                          |
+    | `Front End`          | Martin Cespedes      |                                                                                                                                   |
+ 
