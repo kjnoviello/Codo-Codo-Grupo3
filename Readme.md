@@ -6,16 +6,16 @@ Página informativa sobre Filippo's bar & resto. Incluye 3 secciones y un modal 
 
 
 ## Características principales
-* Reservación
+* Reservación:
 Los usuarios pueden reservar una mesa a través del modal de reserva. Pueden establecer el día, el horario y los comensales.
 
-* Formulario de contact
+* Formulario de contacto:
 Ubicado en la sección de contacto, se puede enviar un mensaje directo sobre cualquier tema.
 
-* Menú
+* Menú:
 En la sección de Menú se muestran diferentes platos desde desayunos hasta cenas.
 
-* Suscripción
+* Suscripción:
 Contiene un campo para suscribirse y recibir las novedades con respecto alm lugar y los menús.
 
 
