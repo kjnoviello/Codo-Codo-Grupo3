@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#form-contact").addEventListener("submit", (e) => {
-    e.preventDefault();
 
     const inputName = document.querySelector("#contact-name").value.trim();
     const inputPhone = document.querySelector("#contact-phone").value.trim();
@@ -20,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     messageError.textContent = "";
 
     if (inputName === "") {
+      e.preventDefault();
       nameError.textContent = "El nombre es obligatorio.";
       nameError.classList.add("error");
       setTimeout(() => {
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (inputPhone === "") {
+      e.preventDefault();
       phoneError.textContent = "El teléfono es obligatorio.";
       phoneError.classList.add("error");
       setTimeout(() => {
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (inputEmail === "") {
+      e.preventDefault();
       emailError.textContent = "El correo es obligatorio.";
       emailError.classList.add("error");
       setTimeout(() => {
@@ -45,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         emailError.classList.remove("error");
       }, 2000);
     } else if (!validateEmail(inputEmail)) {
+      e.preventDefault();
       emailError.textContent = "El correo no es válido.";
       emailError.classList.add("error");
       setTimeout(() => {
@@ -54,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (inputMessage === "") {
+      e.preventDefault();
       messageError.textContent = "El mensaje es obligatorio.";
       messageError.classList.add("error");
       setTimeout(() => {

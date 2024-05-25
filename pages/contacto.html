@@ -67,7 +67,7 @@
 
         <!-- FORM START -->
         <div class="contact__form">
-          <form action="#" class="custom-form">
+          <form action="#" class="custom-form" id="reservationForm">
             <div class="reservation__form-row">
               <div class="reservation__form-group">
                 <div class="reservation__form-item">
@@ -76,7 +76,7 @@
                 </div>
                 <div class="reservation__form-item">
                   <label class="form-label" for="telefono">Número de teléfono</label>
-                  <input class="form-control" type="tel" name="telefono" id="telefono" placeholder="11-4555-6677">
+                  <input class="form-control" type="number" name="telefono" id="telefono" placeholder="11-4555-6677">
                 </div>
                 <div class="reservation__form-item">
                   <label class="form-label" for="fecha">Fecha</label>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="reservation__form-item">
                   <label class="form-label" for="comensales">Número de personas</label>
-                  <input class="form-control" type="number" name="comensales" id="comensales" placeholder="Cantidad">
+                  <input class="form-control" type="number" name="comensales" id="comensales" placeholder="Cantidad" min="1" max="10">
                 </div>
                 <div class="reservation__form-item">
                   <label class="form-label" for="horario">Horario</label>
@@ -246,6 +246,7 @@
   <!-- Script -->
   <script src="../js/main.js"></script>
   <script src="../js/validate.js"></script>
+  <script src="../js/reserva.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </body>

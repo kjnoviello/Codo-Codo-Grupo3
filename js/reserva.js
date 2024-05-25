@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Se define un array de objetos con los campos del formulario. Cada uno con su id, mensaje de error y validación
     const campos = [
         { id: 'nombres', message: 'Por favor, ingrese su nombre completo.', regex: /^(?=.{2,25}$)[a-zA-Z]+(?:\s[a-zA-Z]+){0,4}$/ },
-        { id: 'telefono', message: 'Por favor, ingrese un número de teléfono válido.', regex: /^[0-9]{6,10}$/ },
+        { id: 'telefono', message: 'Por favor, ingrese un número de 6 a 10 dígitos', regex: /^[0-9]{6,10}$/ },
         { id: 'fecha', message: 'Por favor, seleccione una fecha.' },
         { id: 'email', message: 'Por favor, ingrese una dirección de correo electrónico válida.', regex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
         { id: 'comensales', message: 'Por favor, ingrese el número de personas.', validate: value => value > 0 },
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             setTimeout(() => {
                 mensajeExitoso.style.display = 'none';
-            }, 2000);
+            }, 3000);
         }
     });
 

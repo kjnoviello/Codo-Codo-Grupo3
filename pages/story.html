@@ -66,7 +66,7 @@
 
         <!-- FORM START -->
         <div class="contact__form">
-          <form action="#" class="custom-form">
+          <form action="#" class="custom-form" id="reservationForm">
             <div class="reservation__form-row">
               <div class="reservation__form-group">
                 <div class="reservation__form-item">
@@ -75,7 +75,7 @@
                 </div>
                 <div class="reservation__form-item">
                   <label class="form-label" for="telefono">Número de teléfono</label>
-                  <input class="form-control" type="tel" name="telefono" id="telefono" placeholder="11-4555-6677">
+                  <input class="form-control" type="number" name="telefono" id="telefono" placeholder="11-4555-6677">
                 </div>
                 <div class="reservation__form-item">
                   <label class="form-label" for="fecha">Fecha</label>
@@ -159,7 +159,7 @@
         <div class="story__grid">
           <div class="story__grid-item">
             <img src="../assets/images/team/team01.jpg" alt="imagen equipo" class="story__team-image" />
-            <<<<<<< HEAD <h3 class="story__team-heading">Gabriela</h3>
+              <h3 class="story__team-heading">Gabriela</h3>
               <p class="story__team-description">CEO&Fundadora</p>
           </div>
           <div class="story__grid-item">
@@ -171,9 +171,7 @@
             <img src="../assets/images/team/team03.jpg" alt="imagen equipo" class="story__team-image" />
             <h3 class="story__team-heading">Luciano</h3>
             <p class="story__team-description">Chef en Jefe</p>
-            =======
 
-            >>>>>>> ab64cf7 (validation story)
           </div>
         </div>
       </div>
@@ -190,7 +188,8 @@
             <form action="" id="form-story">
               <div class="story__newslatter-input">
                 <input type="email" class="story_newslater-email" placeholder="Tu correo" id="story-email" />
-                <input type="submit" value="Suscribirme" class="story__newslatter-submit" disabled id="submit" />
+                <span id="contact-emailError" class="error"></span>
+                <button type="submit" value="Suscribirme" class="story__newslatter-submit" disabled id="submit">Suscribirme</button>
               </div>
               <div class="story__newslatter-terms">
                 <input type="checkbox" name="terms" id="terms" />
@@ -244,6 +243,7 @@
 
   <script src="../js/main.js"></script>
   <script src="../js/suscribe.js"></script>
+  <script src="../js/reserva.js"></script>
 </body>
 
 </html>
