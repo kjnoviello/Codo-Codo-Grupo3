@@ -35,15 +35,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const form = document.getElementById('reservationForm');
 
+    // Obtiene la fecha de hoy y la del input
+    const today = new Date().toISOString().split('T')[0];
+    const fechaInput = document.getElementById('fecha');
+    fechaInput.setAttribute('min', today);
+
     // Se define un array de objetos con los campos del formulario. Cada uno con su id, mensaje de error y validación
     const campos = [
         { id: 'nombres', message: 'Por favor, ingrese su nombre completo.', regex: /^(?=.{2,25}$)[a-zA-Z]+(?:\s[a-zA-Z]+){0,4}$/ },
         { id: 'telefono', message: 'Por favor, ingrese un número de 6 a 10 dígitos', regex: /^[0-9]{6,10}$/ },
-        { id: 'fecha', message: 'Por favor, seleccione una fecha.' },
+        { id: 'fecha', message: 'Por favor, seleccione una fecha.', validate: value => new Date(value) >= new Date(today)  },
         { id: 'email', message: 'Por favor, ingrese una dirección de correo electrónico válida.', regex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
-        { id: 'comensales', message: 'Por favor, ingrese el número de personas.', validate: value => value > 0 },
-        { id: 'horario', message: 'Por favor, seleccione un horario.' },
-        { id: 'contact-message', message: 'Por favor, ingrese un mensaje.' }
+        { id: 'comensales', message: 'Por favor, ingrese el número de personas.'},
+        { id: 'horario', message: 'Por favor, seleccione un horario entre las 8 y las 23hs.'},
     ];
 
     // Almacenar los placeholders originales. Si aparece un error, poder volver a mostrar el placeholder
