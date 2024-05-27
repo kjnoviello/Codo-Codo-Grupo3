@@ -1,3 +1,5 @@
+// Validación del formulario de contacto
+
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#form-contact").addEventListener("submit", (e) => {
 

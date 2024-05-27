@@ -1,4 +1,4 @@
-// toogle boton surscibir en nosotros
+// toogle activador del boton surscibir en nosotros
 document.addEventListener("DOMContentLoaded", function () {
     const check = document.querySelector("#terms");
     const buttom = document.querySelector("#submit");
@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+// Validacion del correo de suscripcion
 document.querySelector("#form-story").addEventListener("submit", (e) => {
 
     const inputEmail = document.getElementById('story-email').value.trim()

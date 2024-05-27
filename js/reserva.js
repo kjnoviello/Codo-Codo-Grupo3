@@ -1,3 +1,5 @@
+// Validacion del formualario de Reserva
+
 document.addEventListener('DOMContentLoaded', function () {
     const style = document.createElement('style');
     style.innerHTML = `

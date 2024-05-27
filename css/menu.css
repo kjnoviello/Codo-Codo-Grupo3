@@ -1,6 +1,5 @@
 body {
     font-family: var(--font-family);
-    /*puse esto xq no me tomaba --font-body-family en css/main.css*/
 }
 
 .section-header {
@@ -154,11 +153,11 @@ body {
     .section-card {
         min-width: 416px;
     }
+
     .section-card {
         display: flex;
         flex-direction: column;
         flex: 0 0 auto;
         width: 50%;
     }
-    
 }

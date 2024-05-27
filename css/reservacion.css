@@ -74,9 +74,11 @@
     .reservation__form-row{
         flex-direction: column;
     }
+
     #closeReservation{
         font-size: 38px;
     }
+    
     .reservacion__main{
         padding: 20px;
     }
