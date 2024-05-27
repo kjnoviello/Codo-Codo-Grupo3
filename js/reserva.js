@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { id: 'email', message: 'Por favor, ingrese una dirección de correo electrónico válida.', regex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
         { id: 'comensales', message: 'Por favor, ingrese el número de personas.'},
         { id: 'horario', message: 'Por favor, seleccione un horario entre las 8 y las 23hs.'},
+        { id: 'contact-message', message: 'Por favor, ingrese el mensaje'},
     ];
 
     // Almacenar los placeholders originales. Si aparece un error, poder volver a mostrar el placeholder
