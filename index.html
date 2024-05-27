@@ -2,17 +2,399 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/reservacion.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" 
+    rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Flippo - Resto & Bar gourmet</title>
+    <meta name="descripción" content="Filippo: Restaurante y bar en un lugar muy agradable que ofrece almuerzos y cenas variadas de calidad gourmet. Elaboramos nuestros platos con ingredientes frescos y sanos, incluyendo opciones vegetarianas y veganas.">
+    <meta name="keywords" content="Filippo, restaurante, bar, almuerzo, cena, gourmet, ingredientes frescos, comida saludable, comida vegetariana, comida vegana, Buenos Aires">
+    <meta property="og:title" content="Filippo - Restaurante y Bar" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://filippo.vercel.app/" />
+    <meta property="og:image" content="https://filippo.vercel.app/assets/images/filippo_restaurant.jpg"/>
+    <meta property="og:site_name" content="Filippo - Restaurante y Bar"/>
 </head>
 <body>
-    <h1><a href="./pages/nosotros.html">nosotros</a></h1>
     
-    <!-- Script -->
-    <script src="./js/main.js"></script>
+    <!-- NAV START -->
+    <header>
+        <nav class="nav fade-in-top">
+            <a href="../index.html" class="nav__link">
+                <img class="nav__link-favicon" src="./assets/favicon.png" alt="">
+                <img class="nav__link-img" src="../assets/logo.png" alt="logo del negocio">
+            </a>
+            <div class="nav__menu fade-in-top" id="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__item-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__item-link" href="./pages/story.html">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__item-link" href="./pages/menu.html">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__item-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <button class="nav__button nav__button_hide openReservacionResp">Reservar</button>
+                </ul>
+            </div>
+            <button class="nav__button-menu"><i class="ri-menu-line"></i></button>
+            <button class="nav__button openReservacion">Reservar</button>
+        </nav>
+    </header>
+
+    <!-- empieza modal de reservacion -->
+    <aside class="reservacion hideReservacion fade-in-top" id="openReservacion">
+        <section class="reservacion__main contact__main">
+            <div class="reservacion__head">
+                <h2 class="contact__main-title">Reservar una mesa</h2>
+                <button id="closeReservation">X</button>
+            </div>
+            <div class="contact__container reservacion__container">
+
+                <div class="contact__form">
+                    <form action="#" class="custom-form" id="reservationForm">
+                    <div class="reservation__form-row">
+                        <div class="reservation__form-group">
+                        <div class="reservation__form-item">
+                            <label class="form-label" for="nombres">Nombre completo</label>
+                            <input class="form-control" type="text" name="nombres" id="nombres" placeholder="Su nombre">
+                        </div>
+                        <div class="reservation__form-item">
+                            <label class="form-label" for="telefono">Número de teléfono</label>
+                            <input class="form-control" type="number" name="telefono" id="telefono" placeholder="11-4555-6677">
+                        </div>
+                        <div class="reservation__form-item">
+                            <label class="form-label" for="fecha">Fecha</label>
+                            <input class="form-control" type="date" name="fecha" id="fecha">
+                        </div>
+                        </div>
+                        <div class="reservation__form-group">
+                        <div class="reservation__form-item">
+                            <label class="form-label" for="email">Correo electrónico</label>
+                            <input class="form-control" type="email" name="email" id="email" placeholder="email@email.com">
+                        </div>
+                        <div class="reservation__form-item">
+                            <label class="form-label" for="comensales">Número de personas</label>
+                            <input class="form-control" type="number" name="comensales" id="comensales" placeholder="Cantidad" min="1" max="10">
+                        </div>
+                        <div class="reservation__form-item">
+                            <label class="form-label" for="horario">Horario</label>
+                            <input class="form-control" type="time" name="horario" id="horario" placeholder="Horario" min="08:00" max="23:30">
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="contact-message" class="form-label">Mensaje</label>
+                        <textarea name="contact-message" id="contact-message" rows="5" cols="3"
+                        class="form-control form-control-area" placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="form-control">
+                        Enviar Mensaje
+                        </button>
+                    </div>
+                    </form>
+                </div>
+
+                <div class=" reservacion__img">
+                </div>
+            </div>
+        </section>
+    </aside>
+    <!-- termina modal -->
+
+    <!-- MAIN START -->
+    <!-- HEAD AND VIDEO -->
+    <main>
+        <section class="main__section">
+            <video width="100%" height="550px" class="section__video" autoplay muted poster loop >
+                <source src="./assets/production_ID_3769033.mp4" type="video/mp4">
+                Su navegador no soporta este formato de video.
+            </video>
+            <article class="section__text">
+                <div class="section__header">
+                    <h1 class="section__title">Deliciosos filetes</h1>
+                    <br>
+                    <div class="section__rating">
+                        <h4 class="section__rating-score">4.4/5</h4>
+                        <i class="section__rating-star ri-star-fill"></i>
+                        <i class="section__rating-star ri-star-fill"></i>
+                        <i class="section__rating-star ri-star-fill"></i>
+                        <i class="section__rating-star ri-star-fill"></i>
+                        <i class="section__rating-star ri-star-line"></i>
+                    </div>
+                    <p class="section__reviews">De <strong>más de 1,206 </strong>reseñas de clientes</p>
+                </div>
+                <div class="section__carrousel">
+                    <img class="carrousel_img" src="./assets/images/carrousel/gif.gif" alt="Deliciosos filetes">
+                </div>
+            </article>
+            <article class="section__overlaid">
+            </article>            
+        </section>
+
+        <!-- MENU ESPECIALES -->
+        <section class="main__section">
+            <h2 class="section__h2">Menú Especiales</h2>
+            <article class="section__container">
+
+                <div class="section__card">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/breakfast/breakfast01.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Desayuno</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Mañana fresca</h4>
+                            <p><small>$</small>12.50</p>
+                        </div>
+                        <div>
+                            <h6>4.3/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>102 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/lunch/lunch02.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Almuerzo</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Sopa Tooplate</h4>
+                            <p><small>$</small>24.50</p>
+                        </div>
+                        <div>
+                            <h6>3.5/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>50 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/dinner/dinner03.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Cena</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Filete Premium</h4>
+                            <p><small>$</small>45</p>
+                        </div>
+                        <div>
+                            <h6>3.5/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>86 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/dinner/dinner02.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Cena</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Cena de mar</h4>
+                            <p><small>$</small>86</p>
+                        </div>
+                        <div>
+                            <h6>4.2/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>44 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/breakfast/breakfast02.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Desayuno</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Hamburguesa</h4>
+                            <p><small>$</small>20.50</p>
+                        </div>
+                        <div>
+                            <h6>4.3/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>98 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__card">
+                    <div class="card__image-container">
+                        <img class="card__image" src="./assets/images/lunch/lunch01.jpg" alt="foto de un desayuno">
+                        <span class="tag card__tag">Almuerzo</span>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <h4>Sopa fría</h4>
+                            <p><small>$</small>34.20</p>
+                        </div>
+                        <div>
+                            <h6>4.5/5</h6>
+                            <div>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <p>64 reseñas</p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="main_img">
+        </section>
+
+        <!-- NOTICIAS Y EVENTOS -->
+        <section class="main__section">
+            <h2 class="section__h2">Noticias y eventos</h2>
+            <article class="section__container">
+                <div class="section_events">
+                    <div class="event">
+                        <img class="event__image" src="./assets/images/news/news06.jpg" alt="">
+                        <span class="tag event__tag">Presentando</span>
+                        <h5 class="event__title">Consejos para un estilo de vida saludable y una vida feliz</h5>
+                    </div>
+                    <div class="event">
+                        <img class="event__image" src="./assets/images/news/news07.jpg" alt="">
+                        <span class="tag event__tag">Presentando</span>
+                        <h5 class="event__title">Como hacer una comida saludable</h5>
+                    </div>
+                </div>
+                <div class="section_news">
+                    <div  class="news">
+                        <img class="news__image" src="./assets/images/news/news04.jpg" alt="">
+                        <div class="card__info">
+                            <div class="news__header">
+                                <h4 class="news__title">¿El coco es bueno para tí?</h4>
+                            </div>
+                            <div class="news__footer">
+                                <span class="event__tag event_tag--promociones">Promociones</span>
+                                <p class="news__date">8 de abril del 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="news">
+                        <img class="news__image" src="./assets/images/news/news01.jpg" alt="">
+                        <div class="card__info">
+                            <div class="news__header">
+                                <h4 class="news__title">Fideos de filet de salmón</h4>
+                            </div>
+                            <div class="news__footer">
+                                <span class="event__tag event_tag--noticias">Noticias</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="news">
+                        <img class="news__image" src="./assets/images/news/news05.jpg" alt="">
+                        <div class="card__info">
+                            <div class="news__header">
+                                <h4 class="news__title">Hacer una ensalada saludable</h4>
+                            </div>
+                            <div class="news__footer">
+                                <span class="event__tag event_tag--promociones">Reunión</span>
+                                <p class="news__date">30 de abril del 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="footer__container">
+            <h3 class="footer__title">Filippo</h3>
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h6 class="footer__subtitle">Ubicación</h6>
+                    <p class="footer__text">Av. 9 de Julio 2444 - Buenos Aires</p>
+                </div>
+                <div class="footer__info">
+                    <h6 class="footer__subtitle">Horario de apertura</h6>
+                    <p class="footer__text">Lunes a Viernes</p>
+                    <p class="footer__text">10:00 a.m. - 20:00 p.m</p>
+                    <p class="footer__text">Teléfono: 11-3422-9866</p>
+                </div>
+                <div class="footer__info">
+                    <h6 class="footer__subtitle">Redes sociales</h6>
+                    <div class="footer__social">
+                        <div class="social__icon">
+                            <i class="ri ri-instagram-line"></i>
+                        </div>
+                        <div class="social__icon">
+                            <i class="ri ri-twitter-line"></i>
+                        </div>
+                        <div class="social__icon">
+                            <i class="ri ri-facebook-circle-line"></i>
+                        </div>
+                        <div class="social__icon">
+                            <i class="ri ri-youtube-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h6 class="footer__credit">Desarrollado por Grupo 3 - Codo a Codo - 2024</h6>
+        </section>
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/reserva.js"></script>
 
 </body>
 </html>

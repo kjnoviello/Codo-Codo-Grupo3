@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/contacto.css" />
+  <link rel="stylesheet" href="../css/story.css" />
+  <link rel="stylesheet" href="../css/contacto.css">
   <link rel="stylesheet" href="../css/reservacion.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <title>Flippo - Resto & Bar gourmet</title>
   <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
@@ -64,6 +63,7 @@
       </div>
       <div class="contact__container reservacion__container">
 
+        <!-- FORM START -->
         <div class="contact__form">
           <form action="#" class="custom-form" id="reservationForm">
             <div class="reservation__form-row">
@@ -108,6 +108,7 @@
             </div>
           </form>
         </div>
+        <!-- imagen -->
         <div class=" reservacion__img">
         </div>
       </div>
@@ -115,87 +116,86 @@
   </aside>
   <!-- termina modal -->
 
-  <!-- MAIN START -->
-  <main>
-
-    <section class="section__contact">
-      <div class="section__contact-title">
-
-        <h1>Di Hola</h1>
-        <p>Estamos felices de ponernos en contacto contigo</p>
+  <main class="story">
+    <section class="story__hero">
+      <div class="story__content">
+        <h1>Historias de Cocina</h1>
+        <p>Así evolucionó la cocina en nuestra era</p>
       </div>
     </section>
-
-    <section class="contact__main">
-      <h2 class="contact__main-title">Dejanos un Mensaje</h2>
-      <div class="contact__container">
-        <!-- FORM START -->
-        <div class="contact__form">
-          <form action="#" class="custom-form" id="form-contact">
-            <div>
-              <label for="contact-name" class="form-label">Nombre Completo</label>
-              <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Tu nombre" />
-              <span id="contact-nameError" class="error"></span>
-            </div>
-            <div>
-              <label for="contact-phone" class="form-label">Número de teléfono</label>
-              <input type="number" name="contact-phone" id="contact-phone" class="form-control" placeholder="Tu teléfono"/>
-              <span id="contact-phoneError" class="error"></span>
-            </div>
-            <div>
-              <label class="form-label" for="contact-email">Email</label>
-              <input type="email" name="contact-email" id="contact-email" placeholder="Tu email" class="form-control"
-                pattern="[^@]*@[^@]*" />
-              <span id="contact-emailError" class="error"></span>
-            </div>
-            <div>
-              <label for="contact-message" class="form-label">Mensaje</label>
-              <textarea name="contact-message" id="contact-message-2" rows="5" class="form-control form-control-area"
-                placeholder="Tu mensaje"></textarea>
-              <span id="contact-MessageError" class="error"></span>
-            </div>
-            <div class="col-12">
-              <button id="submit-contact" type="submit" class="form-control">
-                Enviar Mensaje
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <!-- HORARIO -->
-        <div class="contact__schedule">
-          <div class="contact__line-container">
-            <div class="contact_line"></div>
-          </div>
-          <h4 class="contact__schedule-title">
-            Horarios de Atención y Servicio
+    <section class="story__news">
+      <div class="story__container story__news-grid">
+        <div class="story__news-content">
+          <h4 class="story__news-title">
+            Consulta nuestras historias de cocina
           </h4>
-          <p class="contact__schedule-text">
-            Nuestro restaurante está comprometido a brindarte una experiencia
-            culinaria excepcional y un servicio al cliente de primera clase.
+          <div class="story__news-buttons">
+            <button class="story__news-button-check">
+              Nuestras Noticias
+            </button>
+            <button class="story__news-button-hi">Saludanos</button>
+          </div>
+        </div>
+        <div class="story__description-container">
+          <p class="story__description-text">
+            En nuestro restaurante, cada plato cuenta una historia que celebra
+            nuestras raíces y la innovación culinaria. Fusionamos ingredientes
+            seleccionados y técnicas tradicionales para crear experiencias
+            gastronómicas únicas.
           </p>
-          <div>
-            <h6 class="contact__schedule-subtitle">Días Laborales: 10:00 AM - 08:00 PM</h6>
-            <p class="contact__schedule-text">Durante estos días, nuestro personal está a tu disposición para responder
-              cualquier consulta o requerimiento. Si necesitas hacer una reserva, obtener información sobre nuestro menú
-              o tener alguna solicitud especial, no dudes en contactarnos.</p>
+          <p class="story__description-text">
+            Nuestros chefs, inspirados por diversas culturas, diseñan menús
+            que deleitan y unen a las personas. Cada comida es una oportunidad
+            para compartir momentos especiales y disfrutar de una experiencia
+            memorable.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="story__team">
+      <div class="story__container">
+        <h2 class="story__main-heading">Miembros del Equipo</h2>
+        <div class="story__grid">
+          <div class="story__grid-item">
+            <img src="../assets/images/team/team01.jpg" alt="imagen equipo" class="story__team-image" />
+              <h3 class="story__team-heading">Gabriela</h3>
+              <p class="story__team-description">CEO&Fundadora</p>
           </div>
-          <div>
-            <h6 class="contact__schedule-subtitle">Sábado y Domingo: 11:00 AM - 11:00 PM</h6>
-            <p class="contact__schedule-text">Durante el fin de semana, puedes visitarnos para un desayuno tardío, un
-              almuerzo prolongado o una cena relajante. Aprovecha estos horarios extendidos para deleitarte con nuestras
-              especialidades y compartir momentos especiales con tus seres queridos.</p>
+          <div class="story__grid-item">
+            <img src="../assets/images/team/team02.jpg" alt="imagen equipo" class="story__team-image" />
+            <h3 class="story__team-heading">Diego</h3>
+            <p class="story__team-description">Administrador</p>
           </div>
-          <div class="contact__line-container">
-            <div class="contact_line"></div>
+          <div class="story__grid-item">
+            <img src="../assets/images/team/team03.jpg" alt="imagen equipo" class="story__team-image" />
+            <h3 class="story__team-heading">Luciano</h3>
+            <p class="story__team-description">Chef en Jefe</p>
           </div>
         </div>
       </div>
-
-      <!-- mapa -->
-      <div class="contact__map">
-        <h4 class="contact_map-text"><u>Dirección:</u> Av. 9 de Julio 2444 - Buenos Aires</h4>
-        <div id="map" class="google-map pt-3"></div>
+    </section>
+    <section class="story__newsletter">
+      <div class="story__container">
+        <div class="story__newsletter-grid">
+          <img src="../assets/images/news/news02.jpg" alt="image newslatter" class="story__newslatter-image" />
+          <div class="story__newsletter-content">
+            <h3 class="story__newsletter-heading">Nuestro Diario</h3>
+            <p class="story__newsletter-text">
+              Noticias de comidas todos los días
+            </p>
+            <form action="" id="form-story">
+              <div class="story__newslatter-input">
+                <input type="email" class="story_newslater-email" placeholder="Tu correo" id="story-email" />
+                <span id="contact-emailError" class="error"></span>
+                <button type="submit" value="Suscribirme" class="story__newslatter-submit" disabled id="submit">Suscribirme</button>
+              </div>
+              <div class="story__newslatter-terms">
+                <input type="checkbox" name="terms" id="terms" />
+                <label for="terms" class="story__newslatter-label">Terminos y condiciones</label>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -239,13 +239,10 @@
     </section>
   </footer>
 
-  <!-- Script -->
-  <script src="../js/mapa.js"></script>
+  <!-- SCRIPTS -->
   <script src="../js/main.js"></script>
-  <script src="../js/validate.js"></script>
+  <script src="../js/suscribe.js"></script>
   <script src="../js/reserva.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </body>
 
 </html>

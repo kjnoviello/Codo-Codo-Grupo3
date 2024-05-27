@@ -1,0 +1,139 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    background-color: var(--section-bg-color);
+    position: relative;
+}
+
+.nav__link-favicon{
+    width: 50px;
+}
+.nav__link{
+    filter: drop-shadow( 15px 12px 8px black);
+}
+
+.nav__link-img{
+    width: 176px;
+    height: 47px;
+}
+
+.nav__menu{
+    padding-inline: 10%;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__item{
+    list-style: none;
+    margin: 15px 24px;
+    cursor: pointer;
+}
+
+.nav__item-link{
+    color: var(--p-color);
+    text-decoration: none;
+    font-size: var(--p-size);
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px rgb(137, 135, 135);
+}
+
+.nav__item-list:hover{
+    color: var(--primary-color);
+}
+
+.nav__item-link:active, .nav__item-link:focus{
+    color: var(--primary-color);
+}
+
+.nav__button{
+    width: 176px;
+    height: 47px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: var(--h6-size);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgb(137, 135, 135);
+}
+
+.nav__button:hover{
+    background-color: brown;
+    transition: 0.5s ease all;
+}
+
+.nav__button_hide{
+    display: none;
+}
+
+.nav__button-menu{
+    width: 50px;
+    height: 47px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.ri-menu-line{
+    font-size: 30px;
+    color: black;
+}
+
+
+
+/* MEDIA */
+@media (max-width: 992px){
+    .nav__item{
+        margin: 15px 12px;
+        text-align: center;
+    }
+
+    .nav__list{
+        flex-direction: column;
+    }
+
+    .nav__button-menu{
+        display: block;
+        box-shadow: 0px 0px 20px rgb(137, 135, 135);
+    }
+
+    .nav__button{
+        display: none;
+    }
+
+    .nav__button_hide{
+        display: inline-block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .nav__menu{
+        padding-inline: 0px;
+        display: none;
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        z-index: 99999;
+    }
+    
+    .active{
+        display: block;
+        background-color: var(--secondary-color);
+        box-shadow: 10px 10px 50px;
+    }
+    
+    .nav{
+        justify-content: space-around;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+    }
+}
