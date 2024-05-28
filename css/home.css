@@ -30,7 +30,7 @@ includes Video */
 }
 
 .section__header, .section__carrousel{
-    padding: 20px;
+    padding: 16px;
 }
 
 .section__title{
@@ -297,7 +297,7 @@ News & Events */
         display: flex;
         gap: 20px;
     }
-    
+
     .news__image{
         width: 100%;
         height: auto;
