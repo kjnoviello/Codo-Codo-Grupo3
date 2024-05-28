@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="../css/contacto.css">
   <link rel="stylesheet" href="../css/reservacion.css">
   <title>Flippo - Resto & Bar gourmet</title>
-  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <meta name="descripción"
+  <meta name="description"
     content="Filippo: Restaurante y bar en un lugar muy agradable que ofrece almuerzos y cenas variadas de calidad gourmet. Elaboramos nuestros platos con ingredientes frescos y sanos, incluyendo opciones vegetarianas y veganas.">
   <meta name="keywords"
     content="Filippo, restaurante, bar, almuerzo, cena, gourmet, ingredientes frescos, comida saludable, comida vegetariana, comida vegana, Buenos Aires">
@@ -28,7 +28,7 @@
   <!-- NAV START -->
   <header>
     <nav class="nav fade-in-top">
-      <a href="../index.html" class="nav__link">
+      <a href="../index.html" class="nav__link" aria-label="Inicio">
         <img class="nav__link-favicon" src="../assets/favicon.png" alt="">
         <img class="nav__link-img" src="../assets/logo.png" alt="logo del negocio">
       </a>
@@ -59,7 +59,7 @@
     <section class="reservacion__main contact__main">
       <div class="reservacion__head">
         <h2 class="contact__main-title">Reservar una mesa</h2>
-        <button id="closeReservation">X</button>
+        <button id="closeReservation" aria-label="Cerrar reservación">X</button>
       </div>
       <div class="contact__container reservacion__container">
 
@@ -92,7 +92,7 @@
                 </div>
                 <div class="reservation__form-item">
                   <label class="form-label" for="horario">Horario</label>
-                  <input class="form-control" type="time" name="horario" id="horario" placeholder="Horario" min="08:00" max="23:30">
+                  <input class="form-control" type="time" name="horario" id="horario" aria-label="Seleccione el horario" min="08:00" max="23:30">
                 </div>
               </div>
             </div>
