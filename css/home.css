@@ -318,7 +318,7 @@ News & Events */
         flex-direction: row;
     }
 
-    .section__news{
+    .section_news{
         flex-direction: row;
         display: flex;
         gap: 20px;
