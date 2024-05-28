@@ -86,6 +86,7 @@ inlcudes cards */
     justify-content: center;
     font-size: var(--h2-size-res);
     margin-bottom: 48px;
+    margin-top: 120px
 }
 
 .section__container{
