@@ -12,6 +12,7 @@ nav{
     width: 50px;
 }
 .nav__link{
+    display: flex;
     filter: drop-shadow( 15px 12px 8px black);
 }
 
@@ -22,6 +23,7 @@ nav{
 
 .nav__menu{
     padding-inline: 10%;
+    text-align: center;
 }
 
 .nav__list{
