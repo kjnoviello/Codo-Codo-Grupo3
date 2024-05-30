@@ -120,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-
     function validarCampo(input, campo) {
         // obtiene y recorta el valor del campo
         const value = input.value.trim();
