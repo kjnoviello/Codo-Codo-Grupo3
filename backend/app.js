@@ -12,8 +12,8 @@ const PORT = 3000;
 app.use(express.json());
 
 //ruta  principal es clientes
-// app.use('/clientes', reservasRoutes);
-// app.use('/clientes', usuariosRoutes);
+app.use('/clientes/reservas', reservasRoutes);
+app.use('/clientes/usuarios', usuariosRoutes);
 
 
 app.listen(PORT, () => {

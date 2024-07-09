@@ -26,11 +26,11 @@ connection.connect((err)=>{
 
             // Se crea la tabla usuario primero
             const createTableQueryUsuarios = `
-                CREATE TABLE usuarios (
+                CREATE TABLE IF NOT EXISTS usuarios (
                     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
-                    nombre VARCHAR(100),
-                    email VARCHAR(100),
-                    telefono VARCHAR(15)
+                    nombre VARCHAR(100) NOT NULL,
+                    email VARCHAR(100) NOT NULL,
+                    telefono VARCHAR(15) NOT NULL
                 );
             `;
 
@@ -39,13 +39,13 @@ connection.connect((err)=>{
 
                 // Si la tabla usuarios se crea exitosamente, entonces se crea la tabla reservas ya que estan relacionadas
                 const createTableQueryReservas = `
-                    CREATE TABLE reservas(
+                    CREATE TABLE IF NOT EXISTS reservas(
                         id_reserva INT AUTO_INCREMENT PRIMARY KEY,
-                        numero_personas INT,
-                        fecha DATE,
-                        horario TIME,
-                        mensaje_reserva VARCHAR(255),
-                        id_usuario INT,
+                        numero_personas INT NOT NULL,
+                        fecha DATE NOT NULL,
+                        horario TIME NOT NULL,
+                        mensaje_reserva VARCHAR(255) NOT NULL,
+                        id_usuario INT NOT NULL,
                         FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
                     );
                 `;
