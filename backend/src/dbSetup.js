@@ -6,8 +6,8 @@ dotenv.config();
 // Crear conexión temporal para crear la base de datos
 const connection = mysql.createConnection({
   host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "Kusanagi83",
+  user: process.env.DB_USER || "kevin",
+  password: process.env.DB_PASSWORD || "k01164186",
   port: process.env.DB_PORT || 3306,
 });
 
@@ -39,7 +39,7 @@ connection.connect((err) => {
       const createTableQueryUsuarios = `
         CREATE TABLE IF NOT EXISTS usuarios (
           id_usuario INT AUTO_INCREMENT PRIMARY KEY,
-          nombre VARCHAR(100),
+          nombre VARCHAR(100),  
           email VARCHAR(100),
           telefono VARCHAR(15)
         );
