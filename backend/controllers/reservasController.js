@@ -132,6 +132,58 @@ const getReservationsByUserId = async (req, res) => {
   }
 };
 
+// Obtenemos reservas por ID de usuario y retornamos los datos de la reserva más los del usuario
+const getReservationsWithUserData = async (req, res) => {
+  const { id_usuario } = req.params;
+
+  try {
+    const [reservas] = await db.execute(
+      `SELECT reservas.*, usuarios.nombre, usuarios.email, usuarios.telefono 
+       FROM reservas 
+       JOIN usuarios ON reservas.id_usuario = usuarios.id_usuario 
+       WHERE reservas.id_usuario = ?`,
+      [id_usuario]
+    );
+
+    if (reservas.length === 0) {
+      res
+        .status(404)
+        .json({ error: "No se encontraron reservas para este usuario" });
+    } else {
+      res.status(200).json(reservas);
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Error al obtener las reservas" });
+  }
+};
+
+// Obtenemos las reservas por fecha
+const getReservationsByDate = async (req, res) => {
+  const { fecha } = req.body;
+
+  try {
+    const [reservas] = await db.execute(
+      `SELECT reservas.*, usuarios.nombre, usuarios.email, usuarios.telefono 
+       FROM reservas 
+       JOIN usuarios ON reservas.id_usuario = usuarios.id_usuario 
+       WHERE reservas.fecha = ?`,
+      [fecha]
+    );
+
+    if (reservas.length === 0) {
+      res
+        .status(404)
+        .json({ error: "No se encontraron reservas para esta fecha" });
+    } else {
+      res.status(200).json(reservas);
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Error al obtener las reservas" });
+  }
+};
+
 module.exports = {
   getAllReservations,
   getRervationById,
@@ -139,4 +191,6 @@ module.exports = {
   updateReservation,
   deleteReservation,
   getReservationsByUserId,
+  getReservationsWithUserData,
+  getReservationsByDate,
 };
