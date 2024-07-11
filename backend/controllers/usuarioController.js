@@ -95,6 +95,7 @@ const deleteUser = async (req, res) => {
     res.status(500).json({ error: "Error al borrar el usuario" });
   }
 };
+
 //Exportamos los modulos
 module.exports = {
   getAllUsers,
