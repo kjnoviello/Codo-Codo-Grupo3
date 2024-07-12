@@ -1,4 +1,5 @@
-const db = require("../db/db");
+const db = require("../models/db") 
+
 
 //Obtenemos todos los usuarios
 

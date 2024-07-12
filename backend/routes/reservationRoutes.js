@@ -24,6 +24,6 @@ router.put("/reservation/:id", reservationController.updateReservation);
 
 router.delete("/reservation/:id", reservationController.deleteReservation);
 
-router.post("/reservetion/date", reservationController.getReservationsByDate);
+router.post("/reservation/date", reservationController.getReservationsByDate);
 
 module.exports = router;
