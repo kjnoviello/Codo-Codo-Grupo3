@@ -1,5 +1,5 @@
 //Importamos la conexión de la base de datos
-const db = require("../db/db");
+const db = require("../models/db") 
 
 //Obtenemos todas las reservas
 
@@ -139,9 +139,9 @@ const getReservationsWithUserData = async (req, res) => {
   try {
     const [reservas] = await db.execute(
       `SELECT reservas.*, usuarios.nombre, usuarios.email, usuarios.telefono 
-       FROM reservas 
-       JOIN usuarios ON reservas.id_usuario = usuarios.id_usuario 
-       WHERE reservas.id_usuario = ?`,
+        FROM reservas 
+        JOIN usuarios ON reservas.id_usuario = usuarios.id_usuario 
+        WHERE reservas.id_usuario = ?`,
       [id_usuario]
     );
 
@@ -165,9 +165,9 @@ const getReservationsByDate = async (req, res) => {
   try {
     const [reservas] = await db.execute(
       `SELECT reservas.*, usuarios.nombre, usuarios.email, usuarios.telefono 
-       FROM reservas 
-       JOIN usuarios ON reservas.id_usuario = usuarios.id_usuario 
-       WHERE reservas.fecha = ?`,
+        FROM reservas 
+        JOIN usuarios ON reservas.id_usuario = usuarios.id_usuario 
+        WHERE reservas.fecha = ?`,
       [fecha]
     );
 
